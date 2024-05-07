@@ -46,14 +46,20 @@ def solve(distances, numVehicles, numCustomers):
             remainingCustomers = [distribution[vehicle]]
             numVehicleCustomers = len(remainingCustomers[0])
 
-            # List of potential solutions - originally all start from depot
+            # List of potential solutions (originally all start from depot)
             potentialSolutions = [[0]]
 
+            # Current best route cost - used to prune suboptimal branches
+            currentBestRouteCost = float('inf')
+
             while (potentialSolutions != []):
+                # Find next node to explore using a Best-First Search strategy on the minimum costs
+                nextNodeIndex = runningCosts.index(min(runningCosts))
+
                 # Retrieve current potential solution information
-                path = potentialSolutions.pop(0)
-                currentRemainingCustomers = remainingCustomers.pop(0)
-                currentCost = runningCosts.pop(0)
+                path = potentialSolutions.pop(nextNodeIndex)
+                currentRemainingCustomers = remainingCustomers.pop(nextNodeIndex)
+                currentCost = runningCosts.pop(nextNodeIndex)
 
                 # Last visited node for next distance calculation
                 lastVisited = path[-1]
@@ -67,13 +73,19 @@ def solve(distances, numVehicles, numCustomers):
                     # If not a complete solution then add to potential solutions to explore
                     # If a complete solution then add distance to depot and add to min heap
                     if (len(newPath) != numVehicleCustomers+1):
-                        potentialSolutions.append(newPath)
-                        remainingCustomers.append(newRemainingCustomers)
-                        runningCosts.append(newCost)
+                        # Do not add current route to potential solutions if it is already over the current best known solution
+                        if (newCost < currentBestRouteCost):
+                            potentialSolutions.append(newPath)
+                            remainingCustomers.append(newRemainingCustomers)
+                            runningCosts.append(newCost)
                     else:
                         newPath += [0]
                         newCost += distances[customer][0]
                         heapq.heappush(minHeap, (newCost, newPath))
+
+                        # Update new lowest full route cost
+                        if (newCost < currentBestRouteCost):
+                            currentBestRouteCost = newCost
 
             # Retrieve route with lowest cost
             vehicleCost, vehicleRoute = heapq.heappop(minHeap)
