@@ -1,55 +1,93 @@
 # Code for branch and bound
 import numpy as np
 import heapq
+from itertools import combinations
 
 class Node:
     def __init__(self):
         self.visited = False
 
+# Generate all possible distributions of customers to vehicles
+def distribute_customers(customers, numVehicles):
+    if numVehicles == 1:
+        return [(customers,)]
+    else:
+        distributions = []
+        for r in range(1, len(customers)):
+            for subset in combinations(customers, r):
+                remaining = list(set(customers) - set(subset))
+                for rest in distribute_customers(remaining, numVehicles - 1):
+                    distributions.append((list(subset),) + rest)
+        return distributions
+
+# Solve the problem instance using branch and bound
 def solve(distances, numVehicles, numCustomers):
-    # Initialisation of routes and cost
-    routes = []
-    cost = float('inf')
-    minHeap = []
+    # Calculating distribution of customers between vehicles
+    customers = list(range(1, numCustomers+1))
+    customerDistributions = distribute_customers(customers, numVehicles)
 
-    # Path costs
-    runningCosts = [0]
+    # Values to store the optimal solution
+    bestCost = float('inf')
+    bestRoute = []
 
-    # Remaining customers
-    remainingCustomers = [list(range(1,numCustomers+1))]
+    for distribution in customerDistributions:
+        # Initialise distribution values
+        distributionCost = 0
+        distributionRoutes = []
 
-    # List of potential solutions - originally all start from depot
-    potentialSolutions = [[0]]
+        # Optimise the customer routes for each vehicle in current distribution
+        for vehicle in range(numVehicles):
+            minHeap = []
 
-    while (potentialSolutions != []):
-        # Retrieve current potential solution information
-        path = potentialSolutions.pop(0)
-        currentRemainingCustomers = remainingCustomers.pop(0)
-        currentCost = runningCosts.pop(0)
+            # Path costs
+            runningCosts = [0]
 
-        # Last visited node for next distance calculation
-        lastVisited = path[-1]
+            # Remaining customers (decided by how customers split in distribution)
+            remainingCustomers = [distribution[vehicle]]
+            numVehicleCustomers = len(remainingCustomers[0])
 
-        # Iterate through which customer to visit next
-        for customer in currentRemainingCustomers:
-            newRemainingCustomers = [c for c in currentRemainingCustomers if c != customer]
-            newPath = path + [customer]
-            newCost = currentCost + distances[lastVisited][customer]
+            # List of potential solutions - originally all start from depot
+            potentialSolutions = [[0]]
 
-            # If not a complete solution then add to potential solutions to explore
-            # If a complete solution then add distance to depot and add to min heap
-            if (len(newPath) != numCustomers+1):
-                potentialSolutions.append(newPath)
-                remainingCustomers.append(newRemainingCustomers)
-                runningCosts.append(newCost)
-            else:
-                newPath += [0]
-                newCost += distances[customer][0]
-                heapq.heappush(minHeap, (newCost, [newPath]))
+            while (potentialSolutions != []):
+                # Retrieve current potential solution information
+                path = potentialSolutions.pop(0)
+                currentRemainingCustomers = remainingCustomers.pop(0)
+                currentCost = runningCosts.pop(0)
 
-    # Retrive best route
-    cost, routes = heapq.heappop(minHeap)
-    return cost, routes
+                # Last visited node for next distance calculation
+                lastVisited = path[-1]
+
+                # Iterate through which customer to visit next
+                for customer in currentRemainingCustomers:
+                    newRemainingCustomers = [c for c in currentRemainingCustomers if c != customer]
+                    newPath = path + [customer]
+                    newCost = currentCost + distances[lastVisited][customer]
+
+                    # If not a complete solution then add to potential solutions to explore
+                    # If a complete solution then add distance to depot and add to min heap
+                    if (len(newPath) != numVehicleCustomers+1):
+                        potentialSolutions.append(newPath)
+                        remainingCustomers.append(newRemainingCustomers)
+                        runningCosts.append(newCost)
+                    else:
+                        newPath += [0]
+                        newCost += distances[customer][0]
+                        heapq.heappush(minHeap, (newCost, newPath))
+
+            # Retrieve route with lowest cost
+            vehicleCost, vehicleRoute = heapq.heappop(minHeap)
+
+            # Update values for the distribution
+            distributionCost += vehicleCost
+            distributionRoutes.append(vehicleRoute)
+
+        # Best distribution results - update
+        if (distributionCost < bestCost):
+            bestCost = distributionCost
+            bestRoute = distributionRoutes
+    
+    return bestCost, bestRoute
 
 def main():
     # Number of customers and vehicles of the dataset 
