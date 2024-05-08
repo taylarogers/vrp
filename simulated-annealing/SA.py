@@ -21,10 +21,12 @@ class SimulatedAnnealing:
         self.depot_distances_from_cities = distance_matrix[1:, 0]
         self.temperature = 1000  # Initial temperature
         self.cooling_rate = 0.01  # Cooling rate
-        self.num_iterations = 1000
-        self.runs_at_temperature = 100
+        self.num_iterations = 100
+        self.runs_at_temperature = 10
         self.best_solution = None
         self.best_distance = float('inf')
+        self.stagnation_counter = 0  # Counter to track stagnant iterations
+        self.stagnation_threshold = 10 
 
     def initial_solution(self):
         # Generate initial solution by assigning cities to vehicles randomly
@@ -82,7 +84,12 @@ class SimulatedAnnealing:
        # Select a random vehicle
         selected_vehicle = random.choice(new_solution)
 
-        if random.random() < 0.65:
+        if(self.num_vehicles == 1):
+            switch_chance = 1
+        else:
+            switch_chance = 0.65
+
+        if random.random() < switch_chance:
             # Swap two cities within the selected vehicle's route
             if len(selected_vehicle.route) >= 2:
                 idx1, idx2 = random.sample(range(len(selected_vehicle.route)), 2)
@@ -138,10 +145,21 @@ class SimulatedAnnealing:
                     print("New solution is: ")
                     for vehicle in new_solution: print(vehicle)
                     print("New distance is: ", new_distance)
+
+
+                    current_solution = new_solution
+                    current_distance = new_distance
                     if new_distance < self.best_distance:
                         print("New distance is less than best distance")
                         self.best_solution = new_solution
                         self.best_distance = new_distance
+                        self.stagnation_counter = 0 
+                    else:
+                        self.stagnation_counter += 1
+                        print("Stagnation counter: ", self.stagnation_counter)
+                        if self.stagnation_counter >= self.stagnation_threshold:
+                            print("Stagnation counter is greater than stagnation threshold")
+                            return self.best_solution, self.best_distance
                
 
 
@@ -170,7 +188,18 @@ def main():
         [158, 239, 255, 0, 269],
         [488, 23, 296, 181, 0]
     ])
+
+
     num_vehicles = 2
+
+    # distance_matrix = np.array([
+    #     [0, 409, 112, 261 ],
+    #     [326, 0, 58, 94 ],
+    #     [252, 420, 0, 238 ],
+    #     [403, 411, 125, 0]
+    # ])
+
+    # num_vehicles = 1
 
     # Initialize and run simulated annealing
     sa = SimulatedAnnealing(distance_matrix, num_vehicles)
