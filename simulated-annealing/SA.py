@@ -2,16 +2,25 @@ import numpy as np
 import random
 import math
 
+
+#DID THIS WORK
 class Vehicle:
     def __init__(self):
         self.route = []
 
+    def __str__(self):
+        # Convert each city index in the route to city number (adding 1)
+        route_with_depot = [0] + [city + 1 for city in self.route] + [0]
+        return str(route_with_depot)
+
 class SimulatedAnnealing:
     def __init__(self, distance_matrix, num_vehicles):
-        self.distance_matrix = distance_matrix
+        self.distance_matrix = distance_matrix[1:, 1:]
         self.num_vehicles = num_vehicles
+        self.depot_distances_to_cities = distance_matrix[0, 1:]
+        self.depot_distances_from_cities = distance_matrix[1:, 0]
         self.temperature = 1000  # Initial temperature
-        self.cooling_rate = 0.003  # Cooling rate
+        self.cooling_rate = 0.01  # Cooling rate
         self.num_iterations = 1000
         self.runs_at_temperature = 100
         self.best_solution = None
@@ -22,13 +31,14 @@ class SimulatedAnnealing:
         #With "solution" being an array that holds the vehicle objects, and each vehicle object has an array that represents its own route
         solution = []
         cities = list(range(len(self.distance_matrix)))
+
         random.shuffle(cities)
         for i in range(self.num_vehicles):
             vehicle = Vehicle()
             vehicle.route = cities[i::self.num_vehicles]
             solution.append(vehicle)
         for vehicle in solution:
-            print(vehicle.route)
+            print(vehicle)
         return solution
     
 
@@ -39,8 +49,13 @@ class SimulatedAnnealing:
         total_dist = 0
         for vehicle in solution:
             route = vehicle.route
-            for i in range(len(route) - 1):
+            route_length = len(route)
+            # Add distance from depot to starting city
+            total_dist += self.depot_distances_to_cities[route[0]]
+            for i in range(route_length - 1):
                 total_dist += self.distance_matrix[route[i]][route[i+1]]
+            # Add distance from ending city back to depot
+            total_dist += self.depot_distances_from_cities[route[-1]]
         return total_dist
 
     def acceptance_probability(self, old_dist, new_dist):
@@ -67,7 +82,7 @@ class SimulatedAnnealing:
        # Select a random vehicle
         selected_vehicle = random.choice(new_solution)
 
-        if random.random() < 0.5:
+        if random.random() < 0.65:
             # Swap two cities within the selected vehicle's route
             if len(selected_vehicle.route) >= 2:
                 idx1, idx2 = random.sample(range(len(selected_vehicle.route)), 2)
@@ -83,15 +98,22 @@ class SimulatedAnnealing:
                 city = random.choice(selected_vehicle.route)
                 selected_vehicle.route.remove(city)
                 other_vehicle.route.insert(random.randrange(len(other_vehicle.route)), city)
-            print("Removed a random city from the first vehicle's route and inserted it at a random position in the second vehicle's route    ", selected_vehicle.route, other_vehicle.route)
- 
+                print("Removed a random city from the first vehicle's route and inserted it at a random position in the second vehicle's route    ", selected_vehicle.route, other_vehicle.route)
+            else:
+                print("No change was made because only one city in a route chosen")
         return new_solution
 
 
     def run(self):
         # Run simulated annealing
+        print("STARTING RUN")
+        print("DISTANCES TO CITIES FROM DEPOT ", self.depot_distances_to_cities)
+        print("DISTANCES FROM CITIES TO DEPOT ", self.depot_distances_from_cities)
         current_solution = self.initial_solution()
         current_distance = self.total_distance(current_solution)
+        print("BElow i am printing the starting solution now!!!")
+        for vehicle in current_solution: print(vehicle)
+        print("EXP done now")
 
         for iteration in range(self.num_iterations):
             for _ in range(self.runs_at_temperature):
@@ -99,31 +121,37 @@ class SimulatedAnnealing:
                 print("\n")
                 print("ITeration: ", iteration)
                 print("Run at temperature: ", _, "temperature: ", self.temperature)
-                print("Current solution: ", current_solution)
+                print("Current solution: ")
+                for vehicle in current_solution: print(vehicle)
                 print("Current distance: ", current_distance)   
                 print("\n")
                 new_solution = self.generate_neighbor(current_solution)
-                print("New solution: ", new_solution)
+                for vehicle in new_solution: print(vehicle)
                 new_distance = self.total_distance(new_solution)
                 print("New distance: ", new_distance)
 
-                if new_distance < self.best_distance:
-                    print("New distance is less than best distance")
-                    print("Old solution was: ", self.best_solution)
+                if new_distance < current_distance:
+                    print("New distance is less than current distance")
+                    print("Old solution was: ")
+                    for vehicle in current_solution: print(vehicle)
                     print("Old distance was: ", self.best_distance)
-                    print("New solution is: ", new_solution)
+                    print("New solution is: ")
+                    for vehicle in new_solution: print(vehicle)
                     print("New distance is: ", new_distance)
-                    self.best_solution = new_solution
-                    self.best_distance = new_distance
-                else:
-                    print("New distance is not less than best distance")
+                    if new_distance < self.best_distance:
+                        print("New distance is less than best distance")
+                        self.best_solution = new_solution
+                        self.best_distance = new_distance
+               
 
 
-                if self.acceptance_probability(current_distance, new_distance) > random.random():
+                elif self.acceptance_probability(current_distance, new_distance) > random.random():
                     print("Acceptance probability is greater than random number")
-                    print("Old solution was: ", current_solution)
+                    print("Old solution was: ")
+                    for vehicle in current_solution: print(vehicle)
                     print("Old distance was: ", current_distance)
-                    print("New solution is: ", new_solution)
+                    print("New solution is: ")
+                    for vehicle in new_solution: print(vehicle)
                     print("New distance is: ", new_distance)    
 
                     current_solution = new_solution
@@ -148,7 +176,8 @@ def main():
     sa = SimulatedAnnealing(distance_matrix, num_vehicles)
     best_solution, best_distance = sa.run()
 
-    print("Best solution:", best_solution)
+    print("Best solution:")
+    for vehicle in best_solution: print(vehicle)
     print("Total distance:", best_distance)
 
 if __name__ == "__main__":
