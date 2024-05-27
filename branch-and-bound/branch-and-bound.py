@@ -1,6 +1,9 @@
 # Code for branch and bound
 import numpy as np
 import heapq
+import os
+import re
+import time
 from itertools import combinations
 
 class Node:
@@ -102,27 +105,44 @@ def solve(distances, numVehicles, numCustomers):
     return bestCost, bestRoute
 
 def main():
-    # Number of customers and vehicles of the dataset 
-    numCustomers = int(input("Enter the number of customers: "))
-    numVehicles = int(input("Enter the number of vehicles: "))
+    # Get the name of the input file to load
+    datasetFolder = '../dataset'
+    filename = input("Enter the filename: ")
+    filePath = os.path.join(datasetFolder, filename)
 
-    # Pairwise distances between each customer
-    distances = []
-    for i in range(numCustomers + 1):
-        distancesRow = list(map(int, input(f"Enter the distances from node {i} to all other nodes separated by a space: ").split()))
-        distances.append(distancesRow)
+    # Extract numbers from filename
+    numbers = re.findall(r'\d+', filename)
+
+    # Determine number of customers and number of vehicles from filename
+    numCustomers = int(numbers[0])
+    numVehicles = int(numbers[1])
+    
+    # Open the file and read the distance matrix
+    with open(filePath, 'r') as file:
+        lines = file.readlines()[2:]  
+        distances = [[int(num) for num in line.split()] for line in lines]
 
     # Convert to NumPy array - readability and performance
     distancesMatrix = np.array(distances)
 
+    # Start time - only measuring how long the solving function takes (not file reading etc.)
+    startTime = time.time()
+
     # Solve VRP using branch and bound
     cost, routes = solve(distancesMatrix, numVehicles, numCustomers)
+
+    # End time - only measuring how long the solving function takes (not file reading etc.)
+    endTime = time.time()
+
+    # Calculate how long program took to solve
+    timeTaken = endTime - startTime
 
     # Print out info
     for i, route in enumerate(routes):
         print(f"Route for Vehicle {i+1}:", route)
 
     print("Optimal cost:", cost)
+    print("Time taken: " +  str(timeTaken) + " seconds")
 
 if __name__ == "__main__":
     main()
