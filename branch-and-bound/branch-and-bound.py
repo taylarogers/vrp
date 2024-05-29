@@ -5,6 +5,7 @@ import os
 import re
 import time
 from itertools import combinations
+import sys
 
 class Node:
     def __init__(self):
@@ -107,7 +108,12 @@ def solve(distances, numVehicles, numCustomers):
 def main():
     # Get the name of the input file to load
     datasetFolder = '../dataset'
-    filename = input("Enter the filename: ")
+    
+    if len(sys.argv) > 1:
+        filename = sys.argv[1]
+    else:
+        filename = input("Enter the filename: ")
+        
     filePath = os.path.join(datasetFolder, filename)
 
     # Extract numbers from filename

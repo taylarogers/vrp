@@ -1,7 +1,10 @@
 import numpy as np
 import random
 import math
-
+import time
+import os
+import re
+import sys
 
 #DID THIS WORK
 class Vehicle:
@@ -26,7 +29,7 @@ class SimulatedAnnealing:
         self.best_solution = None
         self.best_distance = float('inf')
         self.stagnation_counter = 0  # Counter to track stagnant iterations
-        self.stagnation_threshold = 10 
+        self.stagnation_threshold = 100
 
     def initial_solution(self):
         # Generate initial solution by assigning cities to vehicles randomly
@@ -39,8 +42,8 @@ class SimulatedAnnealing:
             vehicle = Vehicle()
             vehicle.route = cities[i::self.num_vehicles]
             solution.append(vehicle)
-        for vehicle in solution:
-            print(vehicle)
+        #for vehicle in solution:
+            #print(vehicle)
         return solution
     
 
@@ -94,7 +97,7 @@ class SimulatedAnnealing:
             if len(selected_vehicle.route) >= 2:
                 idx1, idx2 = random.sample(range(len(selected_vehicle.route)), 2)
                 selected_vehicle.route[idx1], selected_vehicle.route[idx2] = selected_vehicle.route[idx2], selected_vehicle.route[idx1]
-                print("Swapped two cities within the selected vehicle's route    ", selected_vehicle.route)
+                #print("Swapped two cities within the selected vehicle's route    ", selected_vehicle.route)
         else:
             # Select another vehicle that is not the currently selected vehicle
             other_vehicles = [v for v in new_solution if v != selected_vehicle]
@@ -105,72 +108,72 @@ class SimulatedAnnealing:
                 city = random.choice(selected_vehicle.route)
                 selected_vehicle.route.remove(city)
                 other_vehicle.route.insert(random.randrange(len(other_vehicle.route)), city)
-                print("Removed a random city from the first vehicle's route and inserted it at a random position in the second vehicle's route    ", selected_vehicle.route, other_vehicle.route)
-            else:
-                print("No change was made because only one city in a route chosen")
+               # print("Removed a random city from the first vehicle's route and inserted it at a random position in the second vehicle's route    ", selected_vehicle.route, other_vehicle.route)
+           # else:
+               # print("No change was made because only one city in a route chosen")
         return new_solution
 
 
     def run(self):
         # Run simulated annealing
-        print("STARTING RUN")
-        print("DISTANCES TO CITIES FROM DEPOT ", self.depot_distances_to_cities)
-        print("DISTANCES FROM CITIES TO DEPOT ", self.depot_distances_from_cities)
+       # print("STARTING RUN")
+       # print("DISTANCES TO CITIES FROM DEPOT ", self.depot_distances_to_cities)
+       # print("DISTANCES FROM CITIES TO DEPOT ", self.depot_distances_from_cities)
         current_solution = self.initial_solution()
         current_distance = self.total_distance(current_solution)
-        print("BElow i am printing the starting solution now!!!")
-        for vehicle in current_solution: print(vehicle)
-        print("EXP done now")
+       # print("BElow i am printing the starting solution now!!!")
+       # for vehicle in current_solution: print(vehicle)
+       # print("EXP done now")
 
         for iteration in range(self.num_iterations):
             for _ in range(self.runs_at_temperature):
 
-                print("\n")
-                print("ITeration: ", iteration)
-                print("Run at temperature: ", _, "temperature: ", self.temperature)
-                print("Current solution: ")
-                for vehicle in current_solution: print(vehicle)
-                print("Current distance: ", current_distance)   
-                print("\n")
+                # print("\n")
+                # print("ITeration: ", iteration)
+                # print("Run at temperature: ", _, "temperature: ", self.temperature)
+                # print("Current solution: ")
+                # for vehicle in current_solution: print(vehicle)
+                # print("Current distance: ", current_distance)   
+                # print("\n")
                 new_solution = self.generate_neighbor(current_solution)
-                for vehicle in new_solution: print(vehicle)
+                #for vehicle in new_solution: print(vehicle)
                 new_distance = self.total_distance(new_solution)
-                print("New distance: ", new_distance)
+                # print("New distance: ", new_distance)
 
                 if new_distance < current_distance:
-                    print("New distance is less than current distance")
-                    print("Old solution was: ")
-                    for vehicle in current_solution: print(vehicle)
-                    print("Old distance was: ", self.best_distance)
-                    print("New solution is: ")
-                    for vehicle in new_solution: print(vehicle)
-                    print("New distance is: ", new_distance)
+                    # print("New distance is less than current distance")
+                    # print("Old solution was: ")
+                    # for vehicle in current_solution: print(vehicle)
+                    # print("Old distance was: ", self.best_distance)
+                    # print("New solution is: ")
+                    # for vehicle in new_solution: print(vehicle)
+                    # print("New distance is: ", new_distance)
 
 
                     current_solution = new_solution
                     current_distance = new_distance
                     if new_distance < self.best_distance:
-                        print("New distance is less than best distance")
+                       # print("New distance is less than best distance")
                         self.best_solution = new_solution
                         self.best_distance = new_distance
                         self.stagnation_counter = 0 
                     else:
                         self.stagnation_counter += 1
-                        print("Stagnation counter: ", self.stagnation_counter)
+                      #  print("Stagnation counter: ", self.stagnation_counter)
                         if self.stagnation_counter >= self.stagnation_threshold:
-                            print("Stagnation counter is greater than stagnation threshold")
+                          #  print("Stagnation counter is greater than stagnation threshold")
                             return self.best_solution, self.best_distance
                
 
 
                 elif self.acceptance_probability(current_distance, new_distance) > random.random():
-                    print("Acceptance probability is greater than random number")
-                    print("Old solution was: ")
-                    for vehicle in current_solution: print(vehicle)
-                    print("Old distance was: ", current_distance)
-                    print("New solution is: ")
-                    for vehicle in new_solution: print(vehicle)
-                    print("New distance is: ", new_distance)    
+                    # print("Acceptance probability is greater than random number")
+                    # print("Old solution was: ")
+                    # for vehicle in current_solution: print(vehicle)
+                    # print("Old distance was: ", current_distance)
+                    # print("New solution is: ")
+                    # for vehicle in new_solution: print(vehicle)
+                    # print("New distance is: ", new_distance)    
 
                     current_solution = new_solution
                     current_distance = new_distance
@@ -180,17 +183,46 @@ class SimulatedAnnealing:
         return self.best_solution, self.best_distance
 
 def main():
+
+
+    datasetFolder = '../dataset'
+    
+    if len(sys.argv) > 1:
+        filename = sys.argv[1]
+    else:
+        filename = input("Enter the filename: ")
+
+    filePath = os.path.join(datasetFolder, filename)
+
+    # Extract numbers from filename
+    numbers = re.findall(r'\d+', filename)
+
+    # Determine number of customers and number of vehicles from filename
+    numCustomers = int(numbers[0])
+    num_vehicles = int(numbers[1])
+    
+    # Open the file and read the distance matrix
+    with open(filePath, 'r') as file:
+        lines = file.readlines()[2:]  
+        distances = [[int(num) for num in line.split()] for line in lines]
+
+    # Convert to NumPy array - readability and performance
+    distance_matrix = np.array(distances)
+
+    # Start time - only measuring how long the solving function takes (not file reading etc.)
+    startTime = time.time()
+
     # Example distance matrix and number of vehicles
-    distance_matrix = np.array([
-        [0, 424, 421, 460, 64],
-        [189, 0, 127, 241, 71],
-        [270, 331, 0, 443, 252],
-        [158, 239, 255, 0, 269],
-        [488, 23, 296, 181, 0]
-    ])
+    # distance_matrix = np.array([
+    #     [0, 424, 421, 460, 64],
+    #     [189, 0, 127, 241, 71],
+    #     [270, 331, 0, 443, 252],
+    #     [158, 239, 255, 0, 269],
+    #     [488, 23, 296, 181, 0]
+    # ])
 
 
-    num_vehicles = 2
+    # num_vehicles = 2
 
     # distance_matrix = np.array([
     #     [0, 409, 112, 261 ],
@@ -205,9 +237,18 @@ def main():
     sa = SimulatedAnnealing(distance_matrix, num_vehicles)
     best_solution, best_distance = sa.run()
 
+    endTime = time.time()
+
+    # Calculate how long program took to solve
+    timeTaken = endTime - startTime
+
+
     print("Best solution:")
     for vehicle in best_solution: print(vehicle)
-    print("Total distance:", best_distance)
+    print("Optimal cost:", best_distance)
+    print("Time taken: " +  str(timeTaken) + " seconds")
+
+    
 
 if __name__ == "__main__":
     main()
