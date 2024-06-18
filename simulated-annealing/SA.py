@@ -115,21 +115,12 @@ class SimulatedAnnealing:
 
 
 
-
     def clarke_wright_savings_general(self):
-        """
-        Solves the general VRP using the Clarke and Wright Savings Algorithm.
-
-        Returns:
-        list: A list of routes, where each route is a list of customer indices.
-        float: The total cost of the routes.
-        """
         num_customers = len(self.distance_matrix)
-        depot = 0
-
+    
         # Initialize routes with each customer in their own route
         routes = [[i] for i in range(num_customers)]
-
+    
         # Calculate savings
         savings = []
         for i in range(num_customers):
@@ -138,37 +129,80 @@ class SimulatedAnnealing:
                         self.depot_distances_to_cities[j] -
                         self.distance_matrix[i][j])
                 savings.append((save, i, j))
-
+    
         # Sort savings in descending order
         savings.sort(reverse=True, key=lambda x: x[0])
-
+    
+        # Create a mapping from cities to their current route
+        city_to_route = {i: routes[i] for i in range(num_customers)}
+    
         # Merge routes based on savings until we have the desired number of vehicles
         while len(routes) > self.num_vehicles and savings:
             save, i, j = savings.pop(0)
-
-            # Find routes that contain i and j
-            route_i = next(route for route in routes if i in route)
-            route_j = next(route for route in routes if j in route)
-
+    
+            route_i = city_to_route[i]
+            route_j = city_to_route[j]
+    
             if route_i != route_j:
-                # Determine if i is at the end of route_i or start of route_i
-                # and if j is at the end of route_j or start of route_j
+                # Merge the routes
                 if route_i[-1] == i and route_j[0] == j:
-                    # Merge route_j at the end of route_i
-                    route_i.extend(route_j)
+                    new_route = route_i + route_j
                 elif route_i[0] == i and route_j[-1] == j:
-                    # Merge route_i at the end of route_j
-                    route_i = route_j + route_i
+                    new_route = route_j + route_i
                 elif route_i[0] == i and route_j[0] == j:
-                    # Merge route_j in reverse at the beginning of route_i
-                    route_i = list(reversed(route_j)) + route_i
+                    new_route = list(reversed(route_j)) + route_i
                 else:
-                    # Merge route_j in reverse at the end of route_i
-                    route_i.extend(list(reversed(route_j)))
-
+                    new_route = route_i + list(reversed(route_j))
+    
+                # Update the routes
+                routes.remove(route_i)
                 routes.remove(route_j)
-
-        # Calculate total cost for the merged routes
+                routes.append(new_route)
+    
+                # Update the mapping
+                for city in new_route:
+                    city_to_route[city] = new_route
+    
+        # Ensure all cities are included
+        all_cities = set(range(num_customers))
+        included_cities = {city for route in routes for city in route}
+    
+        # Reinsert missing cities
+        for missing_city in all_cities - included_cities:
+            print(f"Reinserting missing city: {missing_city + 1}")
+            best_route = None
+            best_cost_increase = float('inf')
+            for route in routes:
+                for k in range(len(route) + 1):
+                    new_route = route[:k] + [missing_city] + route[k:]
+                    cost_increase = (self.depot_distances_to_cities[new_route[0]] +
+                                     self.depot_distances_from_cities[new_route[-1]] +
+                                     sum(self.distance_matrix[new_route[i]][new_route[i + 1]]
+                                         for i in range(len(new_route) - 1)))
+                    if cost_increase < best_cost_increase:
+                        best_cost_increase = cost_increase
+                        best_route = new_route
+    
+            if best_route:
+                routes.append(best_route)
+                for city in best_route:
+                    city_to_route[city] = best_route
+    
+        # Reduce routes to specified number of vehicles by merging as necessary
+        while len(routes) > self.num_vehicles:
+            route1 = routes.pop()
+            route2 = routes.pop()
+            merged_route = route1 + route2
+            routes.append(merged_route)
+    
+        # Convert the final routes into a list of Vehicle objects
+        vehicles = []
+        for route in routes:
+            vehicle = Vehicle()
+            vehicle.route = route
+            vehicles.append(vehicle)
+    
+        # Calculate total cost for the final routes
         total_cost = 0
         for route in routes:
             if route:  # Ensure route is not empty
@@ -176,8 +210,9 @@ class SimulatedAnnealing:
                 for k in range(len(route) - 1):
                     total_cost += self.distance_matrix[route[k]][route[k + 1]]  # Between cities
                 total_cost += self.depot_distances_from_cities[route[-1]]  # From last city to depot
-
-        return routes, total_cost
+    
+        return vehicles, total_cost
+    
 
 
     
@@ -189,13 +224,13 @@ class SimulatedAnnealing:
        # print("STARTING RUN")
        # print("DISTANCES TO CITIES FROM DEPOT ", self.depot_distances_to_cities)
        # print("DISTANCES FROM CITIES TO DEPOT ", self.depot_distances_from_cities)
-        current_solution = self.initial_solution()
-        current_distance = self.total_distance(current_solution)
+        # current_solution = self.initial_solution()
+        # current_distance = self.total_distance(current_solution)
 
 
-        # routes, cost = self.clarke_wright_savings_general()
-        # print("Routes:", routes)
-        # print("Total Cost:", cost)
+        current_solution, current_distance = self.clarke_wright_savings_general()
+        print("Routes:", current_solution)
+        print("Total Cost:", current_distance)
        # print("BElow i am printing the starting solution now!!!")
        # for vehicle in current_solution: print(vehicle)
        # print("EXP done now")

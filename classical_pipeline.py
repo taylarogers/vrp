@@ -67,7 +67,7 @@ if __name__ == "__main__":
     dataset_folder = "dataset"  # Use relative path to the dataset folder
     runs = 30
     #timeout = 8 * 3600  # 8 hours
-    timeout = 120
+    timeout = 28800 
     
     # Define the algorithms and their respective folders
     algorithms = [
