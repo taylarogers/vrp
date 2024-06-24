@@ -26,6 +26,12 @@ def distribute_customers(customers, numVehicles):
 
 # Solve the problem instance using branch and bound
 def solve(distances, numVehicles, numCustomers):
+    # ********************************
+    # Counter for instances tested
+    global iterationCounter
+    iterationCounter = 0
+    # ********************************
+
     # Calculating distribution of customers between vehicles
     customers = list(range(1, numCustomers+1))
     customerDistributions = distribute_customers(customers, numVehicles)
@@ -86,6 +92,10 @@ def solve(distances, numVehicles, numCustomers):
                         newPath += [0]
                         newCost += distances[customer][0]
                         heapq.heappush(minHeap, (newCost, newPath))
+
+                        # ********************************
+                        iterationCounter += 1
+                        # ********************************
 
                         # Update new lowest full route cost
                         if (newCost < currentBestRouteCost):
@@ -149,6 +159,10 @@ def main():
 
     print("Optimal cost:", cost)
     print("Time taken: " +  str(timeTaken) + " seconds")
+
+    # ********************************
+    print("Options explored: " + str(iterationCounter))
+    # ********************************
 
 if __name__ == "__main__":
     main()

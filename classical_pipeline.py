@@ -12,7 +12,8 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file):
         for run in range(1, runs + 1):
             start_time = time.time()
             # Construct the command to run the algorithm
-            command = f'python "{script_name}" "{filename}"'
+            #command = f'python3 "{script_name}" "{filename}"' # Mac/Linux
+            command = f'python "{script_name}" "{filename}"' # Windows
             print(f"Running {script_name} on {filename} Run {run} in {script_folder}")
             
             # Change the working directory to the script's folder
