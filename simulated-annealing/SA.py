@@ -222,12 +222,18 @@ class SimulatedAnnealing:
     def run(self):
       
 
+        # Counter for instances tested
+        global iterationCounter
+        iterationCounter = 0
+        # ********************************
+
+
 
         current_solution, current_distance = self.clarke_wright_savings_general()
        
         self.best_solution = current_solution
         self.best_distance = current_distance
-    
+        iterationCounter += 1
 
         for iteration in range(self.num_iterations):
             for _ in range(self.runs_at_temperature):
@@ -237,7 +243,7 @@ class SimulatedAnnealing:
                 #for vehicle in new_solution: print(vehicle)
                 new_distance = self.total_distance(new_solution)
                 # print("New distance: ", new_distance)
-
+                iterationCounter += 1
                 if new_distance < current_distance:
                  
 
@@ -333,6 +339,9 @@ def main():
     for vehicle in best_solution: print(vehicle)
     print("Optimal cost:", best_distance)
     print("Time taken: " +  str(timeTaken) + " seconds")
+    # ********************************
+    print("Options explored: " + str(iterationCounter))
+    # ********************************
 
     
 
