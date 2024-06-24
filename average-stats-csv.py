@@ -16,7 +16,7 @@ def averageStats(filename, type):
         writer = csv.writer(csvfile)
 
         # Write the header row
-        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Average Time', 'Average Number of Routes Explored'])
+        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Average Time (seconds)', 'Average Number of Routes Explored'])
 
         # Search through each new file tested
         while currentLine <= maxLine:
