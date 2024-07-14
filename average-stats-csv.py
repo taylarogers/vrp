@@ -1,7 +1,7 @@
 import csv
 
 # Collect average stats for each file run
-def averageStats(filename, type):
+def averageStatsClassical(filename, type):
     with open(filename, 'r') as file:
         lines = file.readlines()
 
@@ -95,7 +95,6 @@ def averageStats(filename, type):
             writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime, averageOptions])
 
             currentLine += (fileStopper+1)
-        
 
-
-averageStats('output_bnb.txt', 'B&B')
+averageStatsClassical('output_bnb.txt', 'B&B')
+averageStatsClassical('output_sa.txt', 'SA')
