@@ -1,6 +1,6 @@
 matplotlib==3.9.0
 networkx==3.2.1
-numpy==2.0.0
+numpy==1.26.4
 qiskit==1.1.0
 qiskit_aer==0.14.1
 qiskit_algorithms==0.3.0
