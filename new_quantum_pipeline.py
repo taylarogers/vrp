@@ -62,7 +62,7 @@ def worker(scripts, script_folder, dataset_folder, filenames, runs, timeout, out
 if __name__ == "__main__":
     dataset_folder = "dataset"
     runs = 30
-    timeout = 21600
+    timeout = 21600 # 6 hours
 
     vqe_scripts = [
         "vqe_coblya_ES.py",
@@ -72,25 +72,21 @@ if __name__ == "__main__":
     ]
 
     qaoa_scripts = [
-        "qaoa_coblya_2.py",
-        "qaoa_coblya_6.py",
+        "qaoa_coblya_4.py",
         "qaoa_coblya_10.py",
-        "qaoa_coblya_14.py",
-        "qaoa_spsa_2.py",
-        "qaoa_spsa_6.py",
+        "qaoa_coblya_16.py",
+        "qaoa_spsa_4.py",
         "qaoa_spsa_10.py",
-        "qaoa_spsa_14.py"
+        "qaoa_spsa_16.py"
     ]
 
     qaoa_output_files = [
-        "output_qaoa_coblya_2.txt",
-        "output_qaoa_coblya_6.txt",
+        "output_qaoa_coblya_4.txt",
         "output_qaoa_coblya_10.txt",
-        "output_qaoa_coblya_14.txt",
-        "output_qaoa_spsa_2.txt",
-        "output_qaoa_spsa_6.txt",
+        "output_qaoa_coblya_16.txt",
+        "output_qaoa_spsa_4.txt",
         "output_qaoa_spsa_10.txt",
-        "output_qaoa_spsa_14.txt"
+        "output_qaoa_spsa_16.txt"
     ]
 
     vqe_output_files = [

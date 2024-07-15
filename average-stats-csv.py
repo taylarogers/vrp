@@ -90,14 +90,12 @@ averageStats('output_bnb.txt', 'B&B')
 averageStats('output_sa.txt', 'SA')
 
 # Quantum
-averageStats('output_qaoa_coblya_2.txt', 'QAOA_COBLYA_2')
-averageStats('output_qaoa_coblya_6.txt', 'QAOA_COBLYA_6')
+averageStats('output_qaoa_coblya_4.txt', 'QAOA_COBLYA_4')
 averageStats('output_qaoa_coblya_10.txt', 'QAOA_COBLYA_10')
-averageStats('output_qaoa_coblya_14.txt', 'QAOA_COBLYA_14')
-averageStats('output_qaoa_spsa_2.txt', 'QAOA_SPSA_2')
-averageStats('output_qaoa_spsa_6.txt', 'QAOA_SPSA_6')
+averageStats('output_qaoa_coblya_16.txt', 'QAOA_COBLYA_16')
+averageStats('output_qaoa_spsa_4.txt', 'QAOA_SPSA_4')
 averageStats('output_qaoa_spsa_10.txt', 'QAOA_SPSA_10')
-averageStats('output_qaoa_spsa_14.txt', 'QAOA_SPSA_14')
+averageStats('output_qaoa_spsa_16.txt', 'QAOA_SPSA_16')
 
 averageStats('output_vqe_coblya_ES.txt', 'VQE_COBLYA_ES')
 averageStats('output_vqe_coblya_RA.txt', 'VQE_COBLYA_RA')

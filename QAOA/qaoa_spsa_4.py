@@ -88,7 +88,7 @@ class QuantumOptimizer:
     def solve_problem(self, qp):
         algorithm_globals.random_seed = 10598
         sampler = Sampler()
-        qaoa = QAOA(sampler=sampler, optimizer=SPSA(), reps=6)
+        qaoa = QAOA(sampler=sampler, optimizer=SPSA(), reps=4)
         optimizer = MinimumEigenOptimizer(qaoa)
         result = optimizer.solve(qp)
         return result.x, result.fval
