@@ -67,8 +67,8 @@ def worker(script_name, script_folder, dataset_folder, filenames, runs, timeout,
 if __name__ == "__main__":
     dataset_folder = "dataset"  # Use relative path to the dataset folder
     runs = 30
-    #timeout = 8 * 3600  # 8 hours
-    timeout = 28800 
+    #timeout = 6 * 3600 seconds # 6 hours
+    timeout = 21600 
     
     # Define the algorithms and their respective folders
     algorithms = [
