@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from qiskit_algorithms.utils import algorithm_globals
 from qiskit_algorithms import QAOA
-from qiskit_algorithms.optimizers import SPSA
+from qiskit_algorithms.optimizers import COBYLA
 from qiskit.circuit.library import RealAmplitudes
 from qiskit.primitives import Sampler
 from qiskit_optimization import QuadraticProgram
@@ -88,7 +88,7 @@ class QuantumOptimizer:
     def solve_problem(self, qp):
         algorithm_globals.random_seed = 10598
         sampler = Sampler()
-        qaoa = QAOA(sampler=sampler, optimizer=SPSA(), reps=14)
+        qaoa = QAOA(sampler=sampler, optimizer=COBYLA(), reps=4)
         optimizer = MinimumEigenOptimizer(qaoa)
         result = optimizer.solve(qp)
         return result.x, result.fval

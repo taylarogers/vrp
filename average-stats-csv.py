@@ -1,7 +1,7 @@
 import csv
 
-# Collect average stats for each file run
-def averageStatsClassical(filename, type):
+# Collect average stats for each quantum file run
+def averageStats(filename, type):
     with open(filename, 'r') as file:
         lines = file.readlines()
 
@@ -16,7 +16,7 @@ def averageStatsClassical(filename, type):
         writer = csv.writer(csvfile)
 
         # Write the header row
-        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Average Time (seconds)', 'Average Number of Routes Explored'])
+        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Average Time (seconds)'])
 
         # Search through each new file tested
         while currentLine <= maxLine:
@@ -35,19 +35,16 @@ def averageStatsClassical(filename, type):
             lowestOptimalCost = float('inf') # Lowest optimal cost found
             sameLowestAnswer = 0 # Number of times this lowest optimal cost was found out of 30 runs 
             totalTime = 0 # Later converted to average
-            totalOptionsExplored = 0 # Later converted to average
 
             # Get info from first run of a particular file = default values
             firstRunDetails = lines[currentLine:currentLine+fileStopper]
 
             for line in firstRunDetails:
                 if "Optimal cost" in line:
-                    lowestOptimalCost = int(line.split()[-1])
+                    lowestOptimalCost = float(line.split()[-1])
                     sameLowestAnswer += 1
                 elif "Time taken" in line:
                     totalTime += float(line.split()[-2])
-                elif "Options explored" in line:
-                    totalOptionsExplored += int(line.split()[-1])
 
             runNumber = 1
 
@@ -66,7 +63,7 @@ def averageStatsClassical(filename, type):
 
                 for line in runDetails:
                     if "Optimal cost" in line:
-                        value = int(line.split()[-1])
+                        value = float(line.split()[-1])
 
                         if value < lowestOptimalCost:
                             lowestOptimalCost = value
@@ -75,26 +72,32 @@ def averageStatsClassical(filename, type):
                             sameLowestAnswer += 1
                     elif "Time taken" in line:
                         totalTime += float(line.split()[-2])
-                    elif "Options explored" in line:
-                        totalOptionsExplored += int(line.split()[-1])
 
                 runNumber += 1
 
             # Calculate averages
             averageTime = round(totalTime / 30, 6) # Rounded to 6 decimal places
-            averageOptions = int(totalOptionsExplored / 30) # Truncated to integer
-
-            print(filename)
-            print(averageTime)
-            print(averageOptions)
-            print(lowestOptimalCost)
-            print(sameLowestAnswer)
-            print('---')
 
             # Write the data row
-            writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime, averageOptions])
+            writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime])
+
+            print("Written")
 
             currentLine += (fileStopper+1)
 
-averageStatsClassical('output_bnb.txt', 'B&B')
-averageStatsClassical('output_sa.txt', 'SA')
+# Classical
+averageStats('output_bnb.txt', 'B&B')
+averageStats('output_sa.txt', 'SA')
+
+# Quantum
+averageStats('output_qaoa_coblya_4.txt', 'QAOA_COBLYA_4')
+averageStats('output_qaoa_coblya_10.txt', 'QAOA_COBLYA_10')
+averageStats('output_qaoa_coblya_16.txt', 'QAOA_COBLYA_16')
+averageStats('output_qaoa_spsa_4.txt', 'QAOA_SPSA_4')
+averageStats('output_qaoa_spsa_10.txt', 'QAOA_SPSA_10')
+averageStats('output_qaoa_spsa_16.txt', 'QAOA_SPSA_16')
+
+averageStats('output_vqe_coblya_ES.txt', 'VQE_COBLYA_ES')
+averageStats('output_vqe_coblya_RA.txt', 'VQE_COBLYA_RA')
+averageStats('output_vqe_spsa_ES.txt', 'VQE_SPSA_ES')
+averageStats('output_vqe_spsa_RA.txt', 'VQE_SPSA_RA')

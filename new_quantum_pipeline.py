@@ -37,10 +37,12 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file):
             finally:
                 os.chdir(current_dir)
 
-def worker(scripts, script_folder, dataset_folder, filenames, runs, timeout, output_file):
+def worker(scripts, script_folder, dataset_folder, filenames, runs, timeout, output_files):
     print(f"Worker started for scripts in {script_folder}")
     for filename in filenames:
         for script_name in scripts:
+            index = scripts.index(script_name)
+            output_file = output_files[index]
             filepath = os.path.join("..",dataset_folder, filename)
             p = multiprocessing.Process(target=run_algorithm, args=(script_name, script_folder, filepath, runs, output_file))
             p.start()
@@ -60,7 +62,7 @@ def worker(scripts, script_folder, dataset_folder, filenames, runs, timeout, out
 if __name__ == "__main__":
     dataset_folder = "dataset"
     runs = 30
-    timeout = 28800
+    timeout = 21600 # 6 hours
 
     vqe_scripts = [
         "vqe_coblya_ES.py",
@@ -69,17 +71,40 @@ if __name__ == "__main__":
         "vqe_spsa_RA.py"
     ]
 
-    algorithms = [
-        {"scripts": vqe_scripts, "script_folder": "VQE"},
-        {"scripts": ["QAOA.py"], "script_folder": "QAOA"}
+    qaoa_scripts = [
+        "qaoa_coblya_4.py",
+        "qaoa_coblya_10.py",
+        "qaoa_coblya_16.py",
+        "qaoa_spsa_4.py",
+        "qaoa_spsa_10.py",
+        "qaoa_spsa_16.py"
     ]
 
-    output_files = {
-        "VQE": "output_vqe.txt",
-        "QAOA": "output_qaoa.txt"
-    }
+    qaoa_output_files = [
+        "output_qaoa_coblya_4.txt",
+        "output_qaoa_coblya_10.txt",
+        "output_qaoa_coblya_16.txt",
+        "output_qaoa_spsa_4.txt",
+        "output_qaoa_spsa_10.txt",
+        "output_qaoa_spsa_16.txt"
+    ]
 
-    for output_file in output_files.values():
+    vqe_output_files = [
+        "output_vqe_coblya_ES.txt",
+        "output_vqe_coblya_RA.txt",
+        "output_vqe_spsa_ES.txt",
+        "output_vqe_spsa_RA.txt"
+    ]
+
+    algorithms = [
+        {"scripts": vqe_scripts, "script_folder": "VQE", "output_files": vqe_output_files},
+        {"scripts": qaoa_scripts, "script_folder": "QAOA", "output_files": qaoa_output_files}
+    ]
+
+    for output_file in vqe_output_files:
+        open(output_file, 'w').close()
+
+    for output_file in qaoa_output_files:
         open(output_file, 'w').close()
 
     dataset_files = [f for f in os.listdir(dataset_folder) if os.path.isfile(os.path.join(dataset_folder, f))]
@@ -90,10 +115,10 @@ if __name__ == "__main__":
     for algo in algorithms:
         scripts = algo["scripts"]
         script_folder = algo["script_folder"]
-        output_file = output_files[script_folder]
+        output_files = algo["output_files"]
 
         print(f"Starting process for scripts in {script_folder}")
-        p = multiprocessing.Process(target=worker, args=(scripts, script_folder, dataset_folder, dataset_files, runs, timeout, output_file))
+        p = multiprocessing.Process(target=worker, args=(scripts, script_folder, dataset_folder, dataset_files, runs, timeout, output_files))
         processes.append(p)
         p.start()
         print(f"Started worker process {p.pid} for scripts in {script_folder}")
