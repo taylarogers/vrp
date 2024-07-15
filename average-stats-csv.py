@@ -137,7 +137,7 @@ def averageStatsQuantum(filename, type):
 
             for line in firstRunDetails:
                 if "Optimal cost" in line:
-                    lowestOptimalCost = int(line.split()[-1])
+                    lowestOptimalCost = float(line.split()[-1])
                     sameLowestAnswer += 1
                 elif "Time taken" in line:
                     totalTime += float(line.split()[-2])
@@ -159,7 +159,7 @@ def averageStatsQuantum(filename, type):
 
                 for line in runDetails:
                     if "Optimal cost" in line:
-                        value = int(line.split()[-1])
+                        value = float(line.split()[-1])
 
                         if value < lowestOptimalCost:
                             lowestOptimalCost = value
@@ -174,16 +174,12 @@ def averageStatsQuantum(filename, type):
             # Calculate averages
             averageTime = round(totalTime / 30, 6) # Rounded to 6 decimal places
 
-            print(filename)
-            print(averageTime)
-            print(lowestOptimalCost)
-            print(sameLowestAnswer)
-            print('---')
-
             # Write the data row
             writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime])
 
             currentLine += (fileStopper+1)
 
-#averageStatsClassical('output_bnb.txt', 'B&B')
+averageStatsClassical('output_bnb.txt', 'B&B')
 averageStatsClassical('output_sa.txt', 'SA')
+averageStatsQuantum('output_qaoa.txt', 'QAOA')
+averageStatsQuantum('output_vqe.txt', 'VQE')
