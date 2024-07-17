@@ -1,4 +1,3 @@
-import multiprocessing
 import os
 import time
 import subprocess
@@ -13,7 +12,7 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file, timeo
             current_dir = os.getcwd()
             os.chdir(script_folder)
             try:
-                result = subprocess.run(command, shell=True, capture_output=True, text=True)
+                result = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=timeout)
                 end_time = time.time()
                 
                 output = {
@@ -46,33 +45,22 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file, timeo
             finally:
                 os.chdir(current_dir)
 
-def worker(scripts, script_folder, dataset_folder, filenames, runs, timeout, output_files):
-    print(f"Worker started for scripts in {script_folder}")
-    for filename in filenames:
-        for script_name in scripts:
-            index = scripts.index(script_name)
-            output_file = output_files[index]
-            filepath = os.path.join("..", dataset_folder, filename)
-            p = multiprocessing.Process(target=run_algorithm, args=(script_name, script_folder, filepath, runs, output_file, timeout))
-            p.start()
-            print(f"Started process {p.pid} for {script_name} on {filename}")
-            p.join(timeout)
-            if p.is_alive():
-                print(f"Terminating {script_name} on {filename} due to timeout")
-                p.terminate()
-                p.join()
-                with open(output_file, 'a') as f:
-                    f.write(f"Filename: {filepath}\n")
-                    f.write(f"Algorithm: {script_name}\n")
-                    f.write(f"Error: Terminated due to timeout after {timeout} seconds\n")
-                    f.write("\n" + "-"*50 + "\n")
-            print(f"Process {p.pid} for {script_name} on {filename} finished")
+def process_algorithms(algorithms, dataset_files_ordered, runs, timeout):
+    for algo in algorithms:
+        scripts = algo["scripts"]
+        script_folder = algo["script_folder"]
+        output_files = algo["output_files"]
+
+        print(f"Running scripts in {script_folder}")
+        for script_name, output_file in zip(scripts, output_files):
+            for filename in dataset_files_ordered:
+                run_algorithm(script_name, script_folder, filename, runs, output_file, timeout)
+                print(f"Finished running {script_name} on {filename}")
 
 if __name__ == "__main__":
     dataset_folder = "dataset"
     runs = 5
-    #timeout = 21600 # 6 hours
-    timeout = 60
+    timeout = 60  # You can set it back to 21600 for 6 hours
 
     vqe_scripts = [
         "vqe_coblya_ES.py",
@@ -160,21 +148,6 @@ if __name__ == "__main__":
         "vrp-15-3-1.txt"
     ]
 
-    processes = []
-    
-    for algo in algorithms:
-        scripts = algo["scripts"]
-        script_folder = algo["script_folder"]
-        output_files = algo["output_files"]
-
-        print(f"Starting process for scripts in {script_folder}")
-        p = multiprocessing.Process(target=worker, args=(scripts, script_folder, dataset_folder, dataset_files_ordered, runs, timeout, output_files))
-        processes.append(p)
-        p.start()
-        print(f"Started worker process {p.pid} for scripts in {script_folder}")
-
-    for p in processes:
-        p.join()
-        print(f"Worker process {p.pid} finished")
+    process_algorithms(algorithms, dataset_files_ordered, runs, timeout)
 
     print("Results are stored in the respective output files.")

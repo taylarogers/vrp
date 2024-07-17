@@ -87,13 +87,60 @@ if __name__ == "__main__":
         open(output_file, 'w').close()
 
     # List and sort dataset files using natural sorting
-    dataset_files = [f for f in os.listdir(dataset_folder) if os.path.isfile(os.path.join(dataset_folder, f))]
-    dataset_files.sort(key=natural_sort_key)  # Natural sort the files
+    # dataset_files = [f for f in os.listdir(dataset_folder) if os.path.isfile(os.path.join(dataset_folder, f))]
+    # dataset_files.sort(key=natural_sort_key)  # Natural sort the files
+    
     
     # Log the sorted filenames to verify order
-    print("Sorted filenames:")
-    for f in dataset_files:
-        print(f)
+    # print("Sorted filenames:")
+    # for f in dataset_files:
+    #     print(f)
+
+
+
+    dataset_files_ordered = [
+        "vrp-2-1-1.txt",
+        "vrp-3-1-1.txt",
+        "vrp-3-2-1.txt",
+        "vrp-4-3-1.txt",
+        "vrp-5-4-1.txt",
+        "vrp-4-1-1.txt",
+        "vrp-6-5-1.txt",
+        "vrp-4-2-1.txt",
+        "vrp-7-6-1.txt",
+        "vrp-8-7-1.txt",
+        "vrp-5-3-1.txt",
+        "vrp-5-1-1.txt",
+        "vrp-10-8-1.txt",
+        "vrp-5-2-1.txt",
+        "vrp-6-4-1.txt",
+        "vrp-6-1-1.txt",
+        "vrp-7-5-1.txt",
+        "vrp-8-6-1.txt",
+        "vrp-6-2-1.txt",
+        "vrp-10-7-1.txt",
+        "vrp-8-5-1.txt",
+        "vrp-7-4-1.txt",
+        "vrp-6-3-1.txt",
+        "vrp-8-1-1.txt",
+        "vrp-8-4-1.txt",
+        "vrp-10-6-1.txt",
+        "vrp-8-3-1.txt",
+        "vrp-8-2-1.txt",
+        "vrp-10-5-1.txt",
+        "vrp-10-1-1.txt",
+        "vrp-10-4-1.txt",
+        "vrp-10-3-1.txt",
+        "vrp-15-8-1.txt",
+        "vrp-15-7-1.txt",
+        "vrp-15-6-1.txt",
+        "vrp-15-5-1.txt",
+        "vrp-15-1-1.txt",
+        "vrp-15-4-1.txt",
+        "vrp-15-2-1.txt",
+        "vrp-15-3-1.txt"
+    ]
+
 
     processes = []
     
@@ -104,7 +151,7 @@ if __name__ == "__main__":
         output_file = output_files[script_name]
 
         print(f"Starting process for {script_name} in {script_folder}")
-        p = multiprocessing.Process(target=worker, args=(script_name, script_folder, dataset_folder, dataset_files, runs, timeout, output_file))
+        p = multiprocessing.Process(target=worker, args=(script_name, script_folder, dataset_folder, dataset_files_ordered, runs, timeout, output_file))
         processes.append(p)
         p.start()
         print(f"Started worker process {p.pid} for {script_name}")
