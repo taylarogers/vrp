@@ -153,7 +153,15 @@ def extract_routes(n, K, binary_solution):
 
     return routes
 
-
+def calculate_route_costs(routes, instance):
+    total_cost = 0
+    for i, route in enumerate(routes):
+        route_cost = 0
+        for j in range(len(route) - 1):
+            route_cost += instance[route[j], route[j + 1]]
+        print(f"Cost for Vehicle {i + 1}: {route_cost}")
+        total_cost += route_cost
+    print(f"Total cost for all vehicles: {total_cost}")
 
 # n = 3  # number of nodes + depot (n+1)
 # K = 2  # number of vehicles
@@ -211,7 +219,7 @@ timeTaken = endTime - startTime
 # Convert to binary array
 binary_solution = np.round(quantum_solution).astype(int)
 
-#print("Quantum solution (binary):", binary_solution)
+print("Quantum solution (binary):", binary_solution)
 
 routes = extract_routes(n, K, binary_solution)
 for i, route in enumerate(routes):
@@ -219,6 +227,7 @@ for i, route in enumerate(routes):
 print("Optimal cost:", quantum_cost)
 print("Time taken: " +  str(timeTaken) + " seconds")
 
+calculate_route_costs(routes, instance)
 # Convert solution to format compatible with visualization
 # x_quantum = np.zeros(n**2)
 # kk = 0
