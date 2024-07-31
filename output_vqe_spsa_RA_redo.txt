@@ -1,0 +1,33 @@
+Filename: vrp-4-3-3.txt
+Algorithm: vqe_spsa_RA.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 4, 3, 0]
+Optimal cost: 2407
+Time taken: 12095.20416522026 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: vqe_spsa_RA.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 4, 3, 0]
+Optimal cost: 2407
+Time taken: 12106.143711328506 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: vqe_spsa_RA.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 4, 3, 0]
+Optimal cost: 2407
+Time taken: 11615.089633226395 seconds
+Error: 
+
+--------------------------------------------------

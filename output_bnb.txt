@@ -1,0 +1,1246 @@
+Filename: ../dataset/vrp-2-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 2.8371810913085938e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-2-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 3.218650817871094e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-2-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 3.123283386230469e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 6.67572021484375e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 6.413459777832031e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 6.341934204101562e-05 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.0001423358917236328 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.00010967254638671875 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-3-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.000110626220703125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-3-3.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 4, 0]
+Optimal cost: 2241
+Time taken: 0.0006463527679443359 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-3-3.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 4, 0]
+Optimal cost: 2241
+Time taken: 0.0006499290466308594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-3-3.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 4, 0]
+Optimal cost: 2241
+Time taken: 0.0006985664367675781 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.005186319351196289 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.0051326751708984375 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.006811380386352539 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.0001342296600341797 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.0001285076141357422 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.0001513957977294922 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.06053972244262695 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.07994437217712402 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.052757978439331055 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 2, 3, 0]
+Optimal cost: 1766
+Time taken: 0.0005710124969482422 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 2, 3, 0]
+Optimal cost: 1766
+Time taken: 0.0005810260772705078 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-4-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 2, 3, 0]
+Optimal cost: 1766
+Time taken: 0.0005807876586914062 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 4, 0]
+Route for Vehicle 5: [0, 7, 0]
+Route for Vehicle 6: [0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.5181827545166016 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 4, 0]
+Route for Vehicle 5: [0, 7, 0]
+Route for Vehicle 6: [0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.5041046142578125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 2, 0]
+Route for Vehicle 3: [0, 3, 0]
+Route for Vehicle 4: [0, 4, 0]
+Route for Vehicle 5: [0, 7, 0]
+Route for Vehicle 6: [0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.562840461730957 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 7, 0]
+Route for Vehicle 7: [0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 5.754079580307007 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 7, 0]
+Route for Vehicle 7: [0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 5.407148599624634 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 7, 0]
+Route for Vehicle 7: [0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 4.781959056854248 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.0059735774993896484 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.006049156188964844 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.005927085876464844 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.0008740425109863281 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.0008895397186279297 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.0008649826049804688 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 9, 0]
+Route for Vehicle 7: [0, 6, 1, 0]
+Route for Vehicle 8: [0, 7, 10, 0]
+Optimal cost: 4691
+Time taken: 1377.0077633857727 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 9, 0]
+Route for Vehicle 7: [0, 6, 1, 0]
+Route for Vehicle 8: [0, 7, 10, 0]
+Optimal cost: 4691
+Time taken: 1391.2014017105103 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 4, 0]
+Route for Vehicle 4: [0, 5, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 9, 0]
+Route for Vehicle 7: [0, 6, 1, 0]
+Route for Vehicle 8: [0, 7, 10, 0]
+Optimal cost: 4691
+Time taken: 1367.8120772838593 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 4, 5, 0]
+Route for Vehicle 2: [0, 3, 2, 1, 0]
+Optimal cost: 1409
+Time taken: 0.0025572776794433594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 4, 5, 0]
+Route for Vehicle 2: [0, 3, 2, 1, 0]
+Optimal cost: 1409
+Time taken: 0.002535104751586914 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-5-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 4, 5, 0]
+Route for Vehicle 2: [0, 3, 2, 1, 0]
+Optimal cost: 1409
+Time taken: 0.0025289058685302734 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 5, 0]
+Route for Vehicle 3: [0, 6, 0]
+Route for Vehicle 4: [0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.05056309700012207 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 5, 0]
+Route for Vehicle 3: [0, 6, 0]
+Route for Vehicle 4: [0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.05054974555969238 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 5, 0]
+Route for Vehicle 3: [0, 6, 0]
+Route for Vehicle 4: [0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.05206871032714844 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 5, 6, 3, 2, 4, 0]
+Optimal cost: 1405
+Time taken: 0.0059697628021240234 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 5, 6, 3, 2, 4, 0]
+Optimal cost: 1405
+Time taken: 0.006129026412963867 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 5, 6, 3, 2, 4, 0]
+Optimal cost: 1405
+Time taken: 0.0058841705322265625 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.5592517852783203 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.5740909576416016 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.560523509979248 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 7.2769787311553955 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 7.192865371704102 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 8, 0]
+Route for Vehicle 6: [0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 7.440950393676758 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 6, 3, 0]
+Route for Vehicle 2: [0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.012325763702392578 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 6, 3, 0]
+Route for Vehicle 2: [0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.014166116714477539 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 6, 3, 0]
+Route for Vehicle 2: [0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.014241933822631836 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 8, 9, 0]
+Route for Vehicle 7: [0, 1, 7, 4, 0]
+Optimal cost: 2964
+Time taken: 1659.3263835906982 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 8, 9, 0]
+Route for Vehicle 7: [0, 1, 7, 4, 0]
+Optimal cost: 2964
+Time taken: 1650.083369731903 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 6, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 8, 9, 0]
+Route for Vehicle 7: [0, 1, 7, 4, 0]
+Optimal cost: 2964
+Time taken: 1606.9998970031738 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 6, 0]
+Route for Vehicle 3: [0, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 0]
+Route for Vehicle 5: [0, 4, 5, 7, 0]
+Optimal cost: 1777
+Time taken: 6.372479438781738 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 6, 0]
+Route for Vehicle 3: [0, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 0]
+Route for Vehicle 5: [0, 4, 5, 7, 0]
+Optimal cost: 1777
+Time taken: 6.394140720367432 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 6, 0]
+Route for Vehicle 3: [0, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 0]
+Route for Vehicle 5: [0, 4, 5, 7, 0]
+Optimal cost: 1777
+Time taken: 6.326950788497925 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 1, 2, 0]
+Route for Vehicle 4: [0, 5, 3, 6, 0]
+Optimal cost: 1079
+Time taken: 0.367124080657959 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 1, 2, 0]
+Route for Vehicle 4: [0, 5, 3, 6, 0]
+Optimal cost: 1079
+Time taken: 0.3691372871398926 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-7-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 1, 2, 0]
+Route for Vehicle 4: [0, 5, 3, 6, 0]
+Optimal cost: 1079
+Time taken: 0.36403727531433105 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 5, 4, 6, 0]
+Optimal cost: 890
+Time taken: 0.03111124038696289 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 5, 4, 6, 0]
+Optimal cost: 890
+Time taken: 0.03135800361633301 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-6-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 3, 0]
+Route for Vehicle 3: [0, 1, 5, 4, 6, 0]
+Optimal cost: 890
+Time taken: 0.031041622161865234 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.022664546966552734 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.02388477325439453 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.023675918579101562 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 5, 0]
+Route for Vehicle 2: [0, 8, 0]
+Route for Vehicle 3: [0, 2, 3, 0]
+Route for Vehicle 4: [0, 7, 6, 4, 1, 0]
+Optimal cost: 876
+Time taken: 2.5717079639434814 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 5, 0]
+Route for Vehicle 2: [0, 8, 0]
+Route for Vehicle 3: [0, 2, 3, 0]
+Route for Vehicle 4: [0, 7, 6, 4, 1, 0]
+Optimal cost: 876
+Time taken: 2.5532519817352295 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 5, 0]
+Route for Vehicle 2: [0, 8, 0]
+Route for Vehicle 3: [0, 2, 3, 0]
+Route for Vehicle 4: [0, 7, 6, 4, 1, 0]
+Optimal cost: 876
+Time taken: 2.5666260719299316 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 7, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 3, 9, 2, 6, 8, 0]
+Optimal cost: 2159
+Time taken: 1249.2765691280365 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 7, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 3, 9, 2, 6, 8, 0]
+Optimal cost: 2159
+Time taken: 1276.8961400985718 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 5, 0]
+Route for Vehicle 4: [0, 7, 0]
+Route for Vehicle 5: [0, 10, 0]
+Route for Vehicle 6: [0, 3, 9, 2, 6, 8, 0]
+Optimal cost: 2159
+Time taken: 1247.9465601444244 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 7, 0]
+Route for Vehicle 2: [0, 1, 4, 0]
+Route for Vehicle 3: [0, 3, 2, 6, 8, 5, 0]
+Optimal cost: 1636
+Time taken: 2.019838333129883 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 7, 0]
+Route for Vehicle 2: [0, 1, 4, 0]
+Route for Vehicle 3: [0, 3, 2, 6, 8, 5, 0]
+Optimal cost: 1636
+Time taken: 2.0332229137420654 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 7, 0]
+Route for Vehicle 2: [0, 1, 4, 0]
+Route for Vehicle 3: [0, 3, 2, 6, 8, 5, 0]
+Optimal cost: 1636
+Time taken: 2.005326747894287 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 6, 4, 1, 0]
+Route for Vehicle 2: [0, 5, 7, 8, 3, 0]
+Optimal cost: 482
+Time taken: 0.12060809135437012 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 6, 4, 1, 0]
+Route for Vehicle 2: [0, 5, 7, 8, 3, 0]
+Optimal cost: 482
+Time taken: 0.11960124969482422 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-8-2-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 6, 4, 1, 0]
+Route for Vehicle 2: [0, 5, 7, 8, 3, 0]
+Optimal cost: 482
+Time taken: 0.12032055854797363 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 4, 1, 0]
+Route for Vehicle 4: [0, 9, 8, 0]
+Route for Vehicle 5: [0, 6, 10, 5, 3, 0]
+Optimal cost: 1609
+Time taken: 492.71098041534424 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 4, 1, 0]
+Route for Vehicle 4: [0, 9, 8, 0]
+Route for Vehicle 5: [0, 6, 10, 5, 3, 0]
+Optimal cost: 1609
+Time taken: 477.04303097724915 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 2, 0]
+Route for Vehicle 2: [0, 7, 0]
+Route for Vehicle 3: [0, 4, 1, 0]
+Route for Vehicle 4: [0, 9, 8, 0]
+Route for Vehicle 5: [0, 6, 10, 5, 3, 0]
+Optimal cost: 1609
+Time taken: 476.58487462997437 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 5, 10, 2, 9, 4, 8, 6, 1, 3, 7, 0]
+Optimal cost: 1523
+Time taken: 1229.2973082065582 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 5, 10, 2, 9, 4, 8, 6, 1, 3, 7, 0]
+Optimal cost: 1523
+Time taken: 1237.200562953949 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 5, 10, 2, 9, 4, 8, 6, 1, 3, 7, 0]
+Optimal cost: 1523
+Time taken: 1243.069322347641 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 10, 0]
+Route for Vehicle 3: [0, 5, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 658.6638700962067 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 10, 0]
+Route for Vehicle 3: [0, 5, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 662.3800358772278 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 4, 0]
+Route for Vehicle 2: [0, 10, 0]
+Route for Vehicle 3: [0, 5, 8, 0]
+Route for Vehicle 4: [0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 663.5818691253662 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 1, 8, 7, 6, 10, 5, 9, 0]
+Optimal cost: 1179
+Time taken: 44.845128536224365 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 1, 8, 7, 6, 10, 5, 9, 0]
+Optimal cost: 1179
+Time taken: 45.42639183998108 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-10-3-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 3, 0]
+Route for Vehicle 2: [0, 4, 0]
+Route for Vehicle 3: [0, 2, 1, 8, 7, 6, 10, 5, 9, 0]
+Optimal cost: 1179
+Time taken: 45.879631996154785 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-8-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-7-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-6-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-5-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: Route for Vehicle 1: [0, 9, 8, 13, 2, 6, 11, 14, 3, 5, 4, 1, 10, 12, 7, 15, 0]
+Optimal cost: 564
+Time taken: 3392.724981069565 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: Route for Vehicle 1: [0, 9, 8, 13, 2, 6, 11, 14, 3, 5, 4, 1, 10, 12, 7, 15, 0]
+Optimal cost: 564
+Time taken: 3446.03218126297 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-1-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: Route for Vehicle 1: [0, 9, 8, 13, 2, 6, 11, 14, 3, 5, 4, 1, 10, 12, 7, 15, 0]
+Optimal cost: 564
+Time taken: 3399.182011604309 seconds
+Error: 
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 1
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 2
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-4-1.txt
+Algorithm: branch-and-bound.py
+Run: 3
+Output: 
+Error: Killed
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-2-1.txt
+Algorithm: branch-and-bound.py
+Error: Terminated due to timeout after 21600 seconds
+
+--------------------------------------------------
+Filename: ../dataset/vrp-15-3-1.txt
+Algorithm: branch-and-bound.py
+Error: Terminated due to timeout after 21600 seconds
+
+--------------------------------------------------

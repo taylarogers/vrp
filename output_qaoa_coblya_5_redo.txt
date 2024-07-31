@@ -1,0 +1,33 @@
+Filename: vrp-4-3-3.txt
+Algorithm: qaoa_coblya_5.py
+Run: 1
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 2, 0]
+Route for Vehicle 3: [0, 4, 0]
+Optimal cost: 2337
+Time taken: 6670.180021047592 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: qaoa_coblya_5.py
+Run: 2
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 2, 0]
+Route for Vehicle 3: [0, 4, 0]
+Optimal cost: 2337
+Time taken: 6608.777380228043 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: qaoa_coblya_5.py
+Run: 3
+Output: Route for Vehicle 1: [0, 1, 0]
+Route for Vehicle 2: [0, 3, 2, 0]
+Route for Vehicle 3: [0, 4, 0]
+Optimal cost: 2337
+Time taken: 6623.560200452805 seconds
+Error: 
+
+--------------------------------------------------
