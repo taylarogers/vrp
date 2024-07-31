@@ -1,6 +1,6 @@
 import csv
 
-# Collect average stats for each quantum file run
+# Collect average stats for each file run
 def averageStats(filename, type):
     with open(filename, 'r') as file:
         lines = file.readlines()
@@ -49,7 +49,7 @@ def averageStats(filename, type):
             runNumber = 1
 
             # Calculate for all runs of this file instance
-            while runNumber < 30:
+            while runNumber < 3:
                 currentLine += (fileStopper+1)
 
                 line = lines[currentLine]
@@ -76,7 +76,7 @@ def averageStats(filename, type):
                 runNumber += 1
 
             # Calculate averages
-            averageTime = round(totalTime / 30, 6) # Rounded to 6 decimal places
+            averageTime = round(totalTime / 3, 6) # Rounded to 6 decimal places
 
             # Write the data row
             writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime])
@@ -86,18 +86,18 @@ def averageStats(filename, type):
             currentLine += (fileStopper+1)
 
 # Classical
-averageStats('output_bnb.txt', 'B&B')
-averageStats('output_sa.txt', 'SA')
+# averageStats('output_bnb.txt', 'B&B')
+# averageStats('output_sa.txt', 'SA')
 
 # Quantum
-averageStats('output_qaoa_coblya_4.txt', 'QAOA_COBLYA_4')
-averageStats('output_qaoa_coblya_10.txt', 'QAOA_COBLYA_10')
-averageStats('output_qaoa_coblya_16.txt', 'QAOA_COBLYA_16')
-averageStats('output_qaoa_spsa_4.txt', 'QAOA_SPSA_4')
-averageStats('output_qaoa_spsa_10.txt', 'QAOA_SPSA_10')
-averageStats('output_qaoa_spsa_16.txt', 'QAOA_SPSA_16')
+# averageStats('output_qaoa_coblya_4.txt', 'QAOA_COBLYA_4')
+# averageStats('output_qaoa_coblya_10.txt', 'QAOA_COBLYA_10')
+# averageStats('output_qaoa_coblya_16.txt', 'QAOA_COBLYA_16')
+# averageStats('output_qaoa_spsa_4.txt', 'QAOA_SPSA_4')
+# averageStats('output_qaoa_spsa_10.txt', 'QAOA_SPSA_10')
+# averageStats('output_qaoa_spsa_16.txt', 'QAOA_SPSA_16')
 
-averageStats('output_vqe_coblya_ES.txt', 'VQE_COBLYA_ES')
+# averageStats('output_vqe_coblya_ES.txt', 'VQE_COBLYA_ES')
 averageStats('output_vqe_coblya_RA.txt', 'VQE_COBLYA_RA')
-averageStats('output_vqe_spsa_ES.txt', 'VQE_SPSA_ES')
-averageStats('output_vqe_spsa_RA.txt', 'VQE_SPSA_RA')
+# averageStats('output_vqe_spsa_ES.txt', 'VQE_SPSA_ES')
+# averageStats('output_vqe_spsa_RA.txt', 'VQE_SPSA_RA')

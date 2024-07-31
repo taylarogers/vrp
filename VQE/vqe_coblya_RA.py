@@ -81,6 +81,25 @@ class QuantumOptimizer:
         qp.objective.quadratic = Q
         qp.objective.linear = g
         qp.objective.constant = c
+
+        # Add constraints to ensure each node is visited exactly once
+        for i in range(n):
+            qp.linear_constraint(linear={str(j): 1 for j in range(i * (n - 1), (i + 1) * (n - 1))}, sense='==', rhs=1)
+
+        # Add constraints to ensure each node is left exactly once
+        for i in range(n):
+            indices = [(j * (n - 1) + (i if j < i else i - 1)) for j in range(n) if j != i]
+            qp.linear_constraint(linear={str(j): 1 for j in indices}, sense='==', rhs=1)
+
+        # Ensure exactly K vehicles leave the depot
+        depot_outgoing = {str(i): 1 for i in range(n - 1)}
+        qp.linear_constraint(linear=depot_outgoing, sense='==', rhs=K)
+
+        # Ensure exactly K vehicles return to the depot
+        for i in range(1, n):
+            return_to_depot = {str((i * (n - 1)) + (n - 2)): 1}
+            qp.linear_constraint(linear=return_to_depot, sense='==', rhs=1)
+
         return qp
 
     def solve_problem(self, qp):
@@ -153,7 +172,15 @@ def extract_routes(n, K, binary_solution):
 
     return routes
 
-
+def calculate_route_costs(routes, instance):
+    total_cost = 0
+    for i, route in enumerate(routes):
+        route_cost = 0
+        for j in range(len(route) - 1):
+            route_cost += instance[route[j], route[j + 1]]
+        #print(f"Cost for Vehicle {i + 1}: {route_cost}")
+        total_cost += route_cost
+    print(f"Optimal cost: {total_cost}")
 
 
 datasetFolder = '../dataset'
@@ -204,7 +231,10 @@ binary_solution = np.round(quantum_solution).astype(int)
 #print("Quantum solution (binary):", binary_solution)
 
 routes = extract_routes(n, K, binary_solution)
+
 for i, route in enumerate(routes):
     print(f"Route for Vehicle {i+1}: {route}")
-print("Optimal cost:", quantum_cost)
+
+calculate_route_costs(routes, instance)
+
 print("Time taken: " +  str(timeTaken) + " seconds")

@@ -13,10 +13,6 @@ import os
 import re
 import sys
 
-
-
-
-
 class QuantumOptimizer:
     def __init__(self, instance, n, K):
         self.instance = instance
