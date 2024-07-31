@@ -7,22 +7,17 @@ import re
 def natural_sort_key(s):
     return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
 
-def run_algorithm(script_name, script_folder, filename, runs, output_file):
-    with open(output_file, 'a') as f:  # Open in append mode to add results
+def run_algorithm(script_name, script_folder, filename, runs, output_file, timeout):
+    with open(output_file, 'a') as f:
         for run in range(1, runs + 1):
             start_time = time.time()
-            # Construct the command to run the algorithm
-            #command = f'python3 "{script_name}" "{filename}"' # Mac/Linux
-            command = f'python "{script_name}" "{filename}"' # Windows
+            command = f'python "{script_name}" "{filename}"'
             print(f"Running {script_name} on {filename} Run {run} in {script_folder}")
             
-            # Change the working directory to the script's folder
             current_dir = os.getcwd()
             os.chdir(script_folder)
-            
-            # Run the command and capture output
             try:
-                result = subprocess.run(command, shell=True, capture_output=True, text=True)
+                result = subprocess.run(command, shell=True, capture_output=True, text=True, timeout=timeout)
                 end_time = time.time()
                 
                 output = {
@@ -31,24 +26,35 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file):
                     "Run": run,
                     "Output": result.stdout.strip(),
                     "Error": result.stderr.strip(),
-                    "TimeTaken": end_time - start_time
                 }
-                # Write the dictionary output to file with proper newlines
                 for key, value in output.items():
                     f.write(f"{key}: {value}\n")
                 f.write("\n" + "-"*50 + "\n")
+
+                if end_time - start_time > timeout:
+                    print(f"Run {run} for {script_name} exceeded timeout of {timeout} seconds.")
+                    break  # Break out of the loop if timeout exceeded
+                
+            except subprocess.TimeoutExpired:
+                print(f"Timeout expired for {script_name} on {filename} Run {run}")
+                f.write(f"Filename: {filename}\n")
+                f.write(f"Algorithm: {script_name}\n")
+                f.write(f"Run: {run}\n")
+                f.write(f"Error: Timeout expired after {timeout} seconds\n")
+                f.write("\n" + "-"*50 + "\n")
+                break  # Break out of the loop on timeout exception
+
             except Exception as e:
                 print(f"Error running {script_name} on {filename} Run {run}: {e}")
                 f.write(f"Error running {script_name} on {filename} Run {run}: {e}\n")
             finally:
-                # Revert to the original directory
                 os.chdir(current_dir)
 
 def worker(script_name, script_folder, dataset_folder, filenames, runs, timeout, output_file):
     print(f"Worker started for {script_name} in {script_folder}")
     for filename in filenames:
         filepath = os.path.join("..", dataset_folder, filename)
-        p = multiprocessing.Process(target=run_algorithm, args=(script_name, script_folder, filepath, runs, output_file))
+        p = multiprocessing.Process(target=run_algorithm, args=(script_name, script_folder, filepath, runs, output_file, timeout))
         p.start()
         print(f"Started process {p.pid} for {script_name} on {filename}")
         p.join(timeout)
@@ -66,7 +72,7 @@ def worker(script_name, script_folder, dataset_folder, filenames, runs, timeout,
 
 if __name__ == "__main__":
     dataset_folder = "dataset"  # Use relative path to the dataset folder
-    runs = 30
+    runs = 3
     #timeout = 6 * 3600 seconds # 6 hours
     timeout = 21600 
     
@@ -102,7 +108,7 @@ if __name__ == "__main__":
         "vrp-2-1-1.txt",
         "vrp-3-1-1.txt",
         "vrp-3-2-1.txt",
-        "vrp-4-3-1.txt",
+        "vrp-4-3-3.txt",
         "vrp-5-4-1.txt",
         "vrp-4-1-1.txt",
         "vrp-6-5-1.txt",

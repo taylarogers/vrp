@@ -107,7 +107,7 @@ class QuantumOptimizer:
     def solve_problem(self, qp):
         algorithm_globals.random_seed = 10598
         sampler = Sampler()
-        qaoa = QAOA(sampler=sampler, optimizer=COBYLA(), reps=4)
+        qaoa = QAOA(sampler=sampler, optimizer=COBYLA(), reps=5)
         optimizer = MinimumEigenOptimizer(qaoa)
         result = optimizer.solve(qp)
         return result.x, result.fval
@@ -127,8 +127,6 @@ class QuantumOptimizer:
 def extract_routes(n, K, binary_solution):
     routes = [[] for _ in range(K)]
     binary_solution_list = binary_solution.tolist()
-
-    #print(binary_solution_list)
 
     # Identify starting nodes for each vehicle from the depot (node 0)
     depot_slice = binary_solution_list[0:(n-1)]
@@ -242,10 +240,6 @@ timeTaken = endTime - startTime
 binary_solution = np.round(quantum_solution).astype(int)
 
 #print("Quantum solution (binary):", binary_solution)
-
-#print("Optimal cost:", quantum_cost)
-#print(binary_solution)
-
 
 routes = extract_routes(n, K, binary_solution)
 

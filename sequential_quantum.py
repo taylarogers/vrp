@@ -45,59 +45,65 @@ def run_algorithm(script_name, script_folder, filename, runs, output_file, timeo
             finally:
                 os.chdir(current_dir)
 
-def process_algorithms(algorithms, dataset_files_ordered, runs, timeout):
-    for algo in algorithms:
-        scripts = algo["scripts"]
-        script_folder = algo["script_folder"]
-        output_files = algo["output_files"]
+# def process_algorithms(algorithms, dataset_files_ordered, runs, timeout):
+#     for algo in algorithms:
+#         scripts = algo["scripts"]
+#         script_folder = algo["script_folder"]
+#         output_files = algo["output_files"]
 
-        print(f"Running scripts in {script_folder}")
-        for script_name, output_file in zip(scripts, output_files):
-            for filename in dataset_files_ordered:
+#         print(f"Running scripts in {script_folder}")
+#         for script_name, output_file in zip(scripts, output_files):
+#             for filename in dataset_files_ordered:
+#                 run_algorithm(script_name, script_folder, filename, runs, output_file, timeout)
+#                 print(f"Finished running {script_name} on {filename}")
+
+def process_algorithms(algorithms, dataset_files_ordered, runs, timeout):
+    for filename in dataset_files_ordered:
+        print(f"Processing {filename}")
+        for algo in algorithms:
+            scripts = algo["scripts"]
+            script_folder = algo["script_folder"]
+            output_files = algo["output_files"]
+
+            print(f"Running scripts in {script_folder} for {filename}")
+            for script_name, output_file in zip(scripts, output_files):
                 run_algorithm(script_name, script_folder, filename, runs, output_file, timeout)
                 print(f"Finished running {script_name} on {filename}")
 
+
 if __name__ == "__main__":
     dataset_folder = "dataset"
-    runs = 5
-    timeout = 60  # You can set it back to 21600 for 6 hours
+    runs = 3
+    timeout = 21600  # You can set it back to 21600 for 6 hours
 
     vqe_scripts = [
-        "vqe_coblya_ES.py",
         "vqe_coblya_RA.py",
-        "vqe_spsa_ES.py",
         "vqe_spsa_RA.py"
     ]
 
     qaoa_scripts = [
-        "qaoa_coblya_4.py",
-        "qaoa_coblya_10.py",
-        "qaoa_coblya_16.py",
-        "qaoa_spsa_4.py",
-        "qaoa_spsa_10.py",
-        "qaoa_spsa_16.py"
+        "qaoa_coblya_5.py",
+        "qaoa_spsa_5.py"
     ]
 
     qaoa_output_files = [
-        "output_qaoa_coblya_4.txt",
-        "output_qaoa_coblya_10.txt",
-        "output_qaoa_coblya_16.txt",
-        "output_qaoa_spsa_4.txt",
-        "output_qaoa_spsa_10.txt",
-        "output_qaoa_spsa_16.txt"
+        "output_qaoa_coblya_5.txt",
+        "output_qaoa_spsa_5.txt"
     ]
 
     vqe_output_files = [
-        "output_vqe_coblya_ES.txt",
         "output_vqe_coblya_RA.txt",
-        "output_vqe_spsa_ES.txt",
         "output_vqe_spsa_RA.txt"
     ]
 
     algorithms = [
-        {"scripts": vqe_scripts, "script_folder": "VQE", "output_files": vqe_output_files},
-        {"scripts": qaoa_scripts, "script_folder": "QAOA", "output_files": qaoa_output_files}
+        {"scripts": vqe_scripts, "script_folder": "VQE", "output_files": vqe_output_files}
     ]
+
+    # algorithms = [
+    #     {"scripts": vqe_scripts, "script_folder": "VQE", "output_files": vqe_output_files},
+    #     {"scripts": qaoa_scripts, "script_folder": "QAOA", "output_files": qaoa_output_files}
+    # ]
 
     for output_file in vqe_output_files:
         open(output_file, 'w').close()
@@ -109,7 +115,7 @@ if __name__ == "__main__":
         "vrp-2-1-1.txt",
         "vrp-3-1-1.txt",
         "vrp-3-2-1.txt",
-        "vrp-4-3-1.txt",
+        "vrp-4-3-3.txt",
         "vrp-5-4-1.txt",
         "vrp-4-1-1.txt",
         "vrp-6-5-1.txt",
