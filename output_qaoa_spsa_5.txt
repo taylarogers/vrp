@@ -82,36 +82,36 @@ Time taken: 113.47402310371399 seconds
 Error: 
 
 --------------------------------------------------
-Filename: vrp-4-3-1.txt
+Filename: vrp-4-3-3.txt
 Algorithm: qaoa_spsa_5.py
 Run: 1
 Output: Route for Vehicle 1: [0, 1, 0]
-Route for Vehicle 2: [0, 2, 0]
-Route for Vehicle 3: [0, 3, 4, 0]
-Optimal cost: 2183
-Time taken: 14567.988240718842 seconds
+Route for Vehicle 2: [0, 2, 4, 0]
+Route for Vehicle 3: [0, 3, 0]
+Optimal cost: 2317
+Time taken: 14596.843958377838 seconds
 Error: 
 
 --------------------------------------------------
-Filename: vrp-4-3-1.txt
+Filename: vrp-4-3-3.txt
 Algorithm: qaoa_spsa_5.py
 Run: 2
 Output: Route for Vehicle 1: [0, 1, 0]
-Route for Vehicle 2: [0, 2, 0]
-Route for Vehicle 3: [0, 3, 4, 0]
-Optimal cost: 2183
-Time taken: 14752.437107801437 seconds
+Route for Vehicle 2: [0, 2, 4, 0]
+Route for Vehicle 3: [0, 3, 0]
+Optimal cost: 2317
+Time taken: 14819.585702419281 seconds
 Error: 
 
 --------------------------------------------------
-Filename: vrp-4-3-1.txt
+Filename: vrp-4-3-3.txt
 Algorithm: qaoa_spsa_5.py
 Run: 3
 Output: Route for Vehicle 1: [0, 1, 0]
-Route for Vehicle 2: [0, 2, 0]
-Route for Vehicle 3: [0, 3, 4, 0]
-Optimal cost: 2183
-Time taken: 14844.096827030182 seconds
+Route for Vehicle 2: [0, 2, 4, 0]
+Route for Vehicle 3: [0, 3, 0]
+Optimal cost: 2317
+Time taken: 14676.732777833939 seconds
 Error: 
 
 --------------------------------------------------
