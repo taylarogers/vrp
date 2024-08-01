@@ -1,0 +1,6 @@
+Algorithm Name,Scalability,Success Rate
+QAOA_COBLYA,(vrp-2-1-1; vrp-4-2-1),0.8333333333333334
+QAOA_SPSA,(vrp-2-1-1; vrp-4-2-1),1.0
+SA,(vrp-2-1-1; vrp-15-3-1),0.8181818181818182
+VQE_COBLYA_RA,(vrp-2-1-1; vrp-4-3-3),0.5
+VQE_SPSA_RA,(vrp-2-1-1; vrp-4-2-1),1.0
