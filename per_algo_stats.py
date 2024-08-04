@@ -25,7 +25,10 @@ dataframes = [
 results = []
 
 # Flag to include all results, change as needed
-include_all = True
+include_all = False
+
+# Total number of dataset instances (assumed to be the same for each algorithm)
+total_instances = 33
 
 # Calculate metrics for each algorithm
 for algorithm_name, df in dataframes:
@@ -43,29 +46,40 @@ for algorithm_name, df in dataframes:
     else:
         scalability = "No successful runs"
     
-    # Calculate success rate by counting valid results and checking within 90% of B&B
-    success_count = 0
+    # Calculate success rates by counting valid results and checking within 95% and 99% of B&B
+    success_count_95 = 0
+    success_count_99 = 0
+    valid_count = 0
     total_count = 0
     for _, row in df.iterrows():
         file = row['File']
         algo_cost = pd.to_numeric(row['Lowest Optimal Cost'], errors='coerce')
         if pd.notna(algo_cost) and file in bnb_optimal_costs:
             bnb_cost = bnb_optimal_costs[file]
-            if algo_cost <= 1.1 * bnb_cost:
-                success_count += 1
-                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count: {success_count}, Within 90% of B&B: True")
+            if algo_cost <= 1.05 * bnb_cost:
+                success_count_95 += 1
+                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count 95%: {success_count_95}, Within 95% of B&B: True")
             else:
-                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count: {success_count}, Within 90% of B&B: False")
+                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count 95%: {success_count_95}, Within 95% of B&B: False")
+            if algo_cost <= 1.01 * bnb_cost:
+                success_count_99 += 1
+                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count 99%: {success_count_99}, Within 99% of B&B: True")
+            else:
+                print(f"Algorithm: {algorithm_name}, File: {file}, Success Count 99%: {success_count_99}, Within 99% of B&B: False")
+            valid_count += 1
             total_count += 1
         elif include_all:
             if file in bnb_optimal_costs:
                 total_count += 1
 
-    success_rate = success_count / total_count if total_count > 0 else 0
-    results.append((algorithm_name, scalability, success_rate))
+    success_rate_95 = success_count_95 / total_count if total_count > 0 else 0
+    success_rate_99 = success_count_99 / total_count if total_count > 0 else 0
+    print(valid_count, total_instances)
+    feasibility_percentage = valid_count / total_instances if total_instances > 0 else 0
+    results.append((algorithm_name, scalability, success_rate_95, success_rate_99, feasibility_percentage))
 
 # Convert the results to a DataFrame
-results_df = pd.DataFrame(results, columns=["Algorithm Name", "Scalability", "Success Rate"])
+results_df = pd.DataFrame(results, columns=["Algorithm Name", "Scalability", "Success Rate 95%", "Success Rate 99%", "Feasibility Percentage"])
 
 # Write the results to a CSV file
 results_df.to_csv('per_algorithm_stats.csv', index=False)
