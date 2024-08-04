@@ -1,4 +1,5 @@
 import csv
+import numpy as np
 
 # Collect average stats for each file run
 def averageStats(filename, type):
@@ -16,7 +17,9 @@ def averageStats(filename, type):
         writer = csv.writer(csvfile)
 
         # Write the header row
-        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Average Time (seconds)'])
+        writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Highest Optimal Cost', 
+                         'Number of Runs with the Highest Optimal Cost', 'Best Time (seconds)', 'Average Time (seconds)', 
+                         'Worst Time (seconds)', 'Standard Deviation of Optimal Cost', 'Standard Deviation of Time'])
 
         # Search through each new file tested
         while currentLine <= maxLine:
@@ -35,8 +38,14 @@ def averageStats(filename, type):
             filename = line[startIndex:endIndex]
 
             # Average stats to collect
+            optimalCosts = []  # List to store optimal costs
+            times = []  # List to store times
             lowestOptimalCost = float('inf')  # Lowest optimal cost found
+            highestOptimalCost = 0  # Highest optimal cost found
             sameLowestAnswer = 0  # Number of times this lowest optimal cost was found out of 30 runs
+            sameHighestAnswer = 0  # Number of times this highest optimal cost was found out of 30 runs
+            quickestTime = float('inf')  # Quickest time taken to find the optimal cost
+            longestTime = 0  # Longest time taken to find the optimal cost
             totalTime = 0  # Later converted to average
 
             # Check if error occurred in the first run
@@ -49,6 +58,9 @@ def averageStats(filename, type):
                     if "Killed" in line:
                         memoryError = True
                         break
+                    elif "Timeout" in line:
+                        timeoutError = True
+                        break
                     elif "timeout" in line:
                         timeoutError = True
                         break
@@ -56,13 +68,22 @@ def averageStats(filename, type):
                         sizeError = True
                         break
                 elif "Optimal cost" in line:
-                    lowestOptimalCost = float(line.split()[-1])
-                    sameLowestAnswer += 1
+                    cost = float(line.split()[-1])
+                    optimalCosts.append(cost)
+                    lowestOptimalCost = min(lowestOptimalCost, cost)
+                    highestOptimalCost = max(highestOptimalCost, cost)
+                    sameLowestAnswer += 1 if cost == lowestOptimalCost else 0
+                    sameHighestAnswer += 1 if cost == highestOptimalCost else 0
                 elif "Time taken" in line:
-                    totalTime += float(line.split()[-2])
+                    time = float(line.split()[-2])
+                    times.append(time)
+                    totalTime += time
+
+                    quickestTime = min(quickestTime, time)
+                    longestTime = max(longestTime, time)
 
             if memoryError:
-                writer.writerow([filename, "Out of Memory", "Out of Memory", "Out of Memory"])
+                writer.writerow([filename, "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM"])
                 for _ in range(3):
                     currentLine += (fileStopper + 1)
                     linesLeft = lines[currentLine:]
@@ -76,7 +97,7 @@ def averageStats(filename, type):
                 continue
 
             if timeoutError:
-                writer.writerow([filename, "Timeout", "Timeout", "Timeout"])
+                writer.writerow([filename, "T", "T", "T", "T", "T", "T", "T", "T", "T"])
                 currentLine += (fileStopper + 1)
                 linesLeft = lines[currentLine:]
                 if linesLeft:
@@ -89,7 +110,7 @@ def averageStats(filename, type):
                 continue
 
             if sizeError:
-                writer.writerow([filename, "Qubit Limit", "Qubit Limit", "Qubit Limit"])
+                writer.writerow([filename, "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL"])
                 for _ in range(3):
                     currentLine += (fileStopper + 1)
                     linesLeft = lines[currentLine:]
@@ -121,21 +142,40 @@ def averageStats(filename, type):
                 for line in runDetails:
                     if "Optimal cost" in line:
                         value = float(line.split()[-1])
+                        optimalCosts.append(value)
                         if value < lowestOptimalCost:
                             lowestOptimalCost = value
                             sameLowestAnswer = 1
                         elif value == lowestOptimalCost:
                             sameLowestAnswer += 1
+                        elif value > highestOptimalCost:
+                            highestOptimalCost = value
+                            sameHighestAnswer = 1
+                        elif value == highestOptimalCost:
+                            sameHighestAnswer += 1
                     elif "Time taken" in line:
-                        totalTime += float(line.split()[-2])
+                        time = float(line.split()[-2])
+                        times.append(time)
+                        totalTime += time
+
+                        if time < quickestTime:
+                            quickestTime = time
+                        if time > longestTime:
+                            longestTime = time
 
                 runNumber += 1
 
-            # Calculate averages
+            # Calculate averages and standard deviations
+            # *************************** CHANGE TO 6 WHEN UPDATED RUNS ***************************
             averageTime = round(totalTime / 3, 6)  # Rounded to 6 decimal places
+            stdDevOptimalCost = round(np.std(optimalCosts), 6)  # Standard deviation of optimal cost
+            stdDevTime = round(np.std(times), 6)  # Standard deviation of time
+            bestTime = round(quickestTime, 6)
+            worstTime = round(longestTime, 6)
 
             # Write the data row
-            writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, averageTime])
+            writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, highestOptimalCost, sameHighestAnswer,
+                             bestTime, averageTime, worstTime, stdDevOptimalCost, stdDevTime])
 
             print("Written")
 
