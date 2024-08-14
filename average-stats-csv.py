@@ -191,3 +191,7 @@ averageStats('output_qaoa_spsa_5.txt', 'QAOA_SPSA_5')
 
 averageStats('output_vqe_coblya_RA.txt', 'VQE_COBLYA_RA')
 averageStats('output_vqe_spsa_RA.txt', 'VQE_SPSA_RA')
+
+averageStats('new_sp=100_output_sa.txt', 'SA_SP100')
+averageStats('new_sp=1000_output_sa.txt', 'SA_SP1000')
+

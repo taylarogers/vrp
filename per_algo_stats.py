@@ -7,6 +7,8 @@ qaoa_spsa_stats = pd.read_csv('QAOA_SPSA_5_stats.csv')
 sa_stats = pd.read_csv('SA_stats.csv')
 vqe_cobyla_ra_stats = pd.read_csv('VQE_COBLYA_RA_stats.csv')
 vqe_spsa_ra_stats = pd.read_csv('VQE_SPSA_RA_stats.csv')
+sa_sp100_stats = pd.read_csv('SA_SP100_stats.csv')
+sa_sp1000_stats = pd.read_csv('SA_SP1000_stats.csv')
 
 # Extract the optimal costs from B&B, dropping rows with NaN values
 bnb_stats['Lowest Optimal Cost'] = pd.to_numeric(bnb_stats['Lowest Optimal Cost'], errors='coerce')
@@ -18,7 +20,9 @@ dataframes = [
     ("QAOA_SPSA", qaoa_spsa_stats),
     ("SA", sa_stats),
     ("VQE_COBLYA_RA", vqe_cobyla_ra_stats),
-    ("VQE_SPSA_RA", vqe_spsa_ra_stats)
+    ("VQE_SPSA_RA", vqe_spsa_ra_stats),
+    ("SA SP=100", sa_sp100_stats),
+    ("SA SP=1000", sa_sp1000_stats)
 ]
 
 # Placeholder for the results
