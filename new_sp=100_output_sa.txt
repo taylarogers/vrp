@@ -1,0 +1,3048 @@
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.05985689163208008 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.06240558624267578 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.06149792671203613 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.06098747253417969 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.06084728240966797 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-2-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 2, 0]
+Optimal cost: 637
+Time taken: 0.0618739128112793 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.005079507827758789 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.004529237747192383 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.004294633865356445 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.0030074119567871094 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.002939939498901367 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 1, 2, 0]
+Optimal cost: 1096
+Time taken: 0.003973484039306641 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.011870384216308594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.010378599166870117 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.011842727661132812 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.011802196502685547 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.011616945266723633 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-3-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 3, 0]
+Optimal cost: 1442
+Time taken: 0.014176368713378906 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 4, 0]
+[0, 3, 0]
+[0, 2, 0]
+Optimal cost: 2241
+Time taken: 0.010271549224853516 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 1, 4, 0]
+Optimal cost: 2241
+Time taken: 0.008063077926635742 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 4, 0]
+[0, 3, 0]
+[0, 2, 0]
+Optimal cost: 2241
+Time taken: 0.011212348937988281 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 1, 4, 0]
+[0, 3, 0]
+Optimal cost: 2241
+Time taken: 0.007498025894165039 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 4, 0]
+[0, 3, 0]
+[0, 2, 0]
+Optimal cost: 2241
+Time taken: 0.009663581848144531 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-3-3.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 4, 0]
+[0, 3, 0]
+[0, 2, 0]
+Optimal cost: 2241
+Time taken: 0.00889897346496582 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.07221102714538574 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 5, 2, 0]
+[0, 1, 0]
+[0, 4, 0]
+[0, 3, 0]
+Optimal cost: 2871
+Time taken: 0.06921815872192383 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.0717320442199707 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.07113242149353027 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.07185029983520508 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 2, 0]
+Optimal cost: 2871
+Time taken: 0.07230639457702637 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.004784345626831055 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.007562160491943359 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.004168987274169922 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.004721641540527344 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.007030010223388672 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 4, 2, 1, 0]
+Optimal cost: 1003
+Time taken: 0.006693124771118164 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.0749812126159668 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.07465410232543945 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.07428359985351562 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.0861818790435791 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.08120393753051758 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-5-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 0]
+[0, 4, 5, 0]
+Optimal cost: 1462
+Time taken: 0.07404398918151855 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 4, 2, 3, 0]
+[0, 1, 0]
+Optimal cost: 1766
+Time taken: 0.013768196105957031 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 2, 3, 0]
+Optimal cost: 1766
+Time taken: 0.012305736541748047 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 4, 2, 3, 0]
+[0, 1, 0]
+Optimal cost: 1766
+Time taken: 0.014548063278198242 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 4, 2, 3, 0]
+[0, 1, 0]
+Optimal cost: 1766
+Time taken: 0.009176015853881836 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 4, 2, 3, 0]
+[0, 1, 0]
+Optimal cost: 1766
+Time taken: 0.012304067611694336 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-4-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 4, 2, 3, 0]
+[0, 1, 0]
+Optimal cost: 1766
+Time taken: 0.009172677993774414 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.12572216987609863 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.07814717292785645 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.08019542694091797 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.08070158958435059 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.07819509506225586 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-6-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 2, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 7, 0]
+[0, 5, 6, 0]
+Optimal cost: 2925
+Time taken: 0.08749198913574219 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.10355544090270996 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.1056826114654541 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.1070399284362793 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.10609793663024902 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.10573315620422363 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-7-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 2, 6, 0]
+Optimal cost: 3241
+Time taken: 0.10410451889038086 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.09010148048400879 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 4, 0]
+[0, 3, 0]
+[0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.08582496643066406 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 0]
+[0, 2, 5, 1, 0]
+[0, 4, 0]
+Optimal cost: 1943
+Time taken: 0.08292222023010254 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 4, 0]
+[0, 3, 0]
+[0, 2, 5, 1, 0]
+Optimal cost: 1943
+Time taken: 0.08243608474731445 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 0]
+[0, 2, 5, 1, 0]
+[0, 4, 0]
+Optimal cost: 1943
+Time taken: 0.07191753387451172 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-3-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 5, 1, 0]
+[0, 3, 0]
+[0, 4, 0]
+Optimal cost: 1943
+Time taken: 0.06897616386413574 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.008165359497070312 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.010892868041992188 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.0071773529052734375 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.008616209030151367 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.005504608154296875 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 5, 2, 4, 3, 0]
+Optimal cost: 1260
+Time taken: 0.007901668548583984 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 8, 0]
+[0, 9, 0]
+[0, 6, 0]
+[0, 7, 10, 1, 0]
+[0, 2, 0]
+Optimal cost: 4745
+Time taken: 0.06075906753540039 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 6, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 8, 0]
+[0, 2, 0]
+[0, 9, 0]
+[0, 7, 10, 0]
+[0, 3, 0]
+Optimal cost: 4691
+Time taken: 0.1183023452758789 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 7, 10, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 9, 0]
+[0, 3, 0]
+[0, 1, 8, 0]
+[0, 2, 0]
+Optimal cost: 4785
+Time taken: 0.10987997055053711 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 8, 0]
+[0, 9, 0]
+[0, 7, 10, 0]
+[0, 3, 0]
+[0, 6, 1, 0]
+Optimal cost: 4691
+Time taken: 0.0989842414855957 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 2, 9, 0]
+[0, 7, 10, 0]
+[0, 8, 0]
+[0, 1, 0]
+Optimal cost: 4924
+Time taken: 0.03837275505065918 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-8-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 8, 0]
+[0, 9, 0]
+[0, 2, 0]
+[0, 7, 10, 0]
+[0, 6, 1, 0]
+Optimal cost: 4691
+Time taken: 0.09521961212158203 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 2, 1, 0]
+[0, 4, 5, 0]
+Optimal cost: 1409
+Time taken: 0.015955209732055664 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 4, 5, 0]
+[0, 3, 2, 1, 0]
+Optimal cost: 1409
+Time taken: 0.040924787521362305 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 2, 1, 0]
+[0, 4, 5, 0]
+Optimal cost: 1409
+Time taken: 0.02405714988708496 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 2, 1, 0]
+[0, 4, 5, 0]
+Optimal cost: 1409
+Time taken: 0.026480913162231445 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 2, 1, 0]
+[0, 4, 5, 0]
+Optimal cost: 1409
+Time taken: 0.02772974967956543 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-5-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 4, 5, 0]
+[0, 3, 2, 1, 0]
+Optimal cost: 1409
+Time taken: 0.01844644546508789 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.015475749969482422 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.040079355239868164 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.015995264053344727 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.013016462326049805 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.015433311462402344 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 1, 4, 3, 0]
+Optimal cost: 1747
+Time taken: 0.015474557876586914 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.008697748184204102 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.015722990036010742 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.011657476425170898 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.00834965705871582 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.010085821151733398 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 4, 2, 3, 6, 5, 1, 0]
+Optimal cost: 1405
+Time taken: 0.008821725845336914 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.02173161506652832 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.024466991424560547 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.02030181884765625 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.025172948837280273 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.02305912971496582 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-5-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 1797
+Time taken: 0.05280613899230957 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.03466939926147461 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.03341817855834961 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.07244253158569336 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.04748964309692383 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.027050495147705078 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-6-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 3, 1, 7, 0]
+Optimal cost: 2005
+Time taken: 0.030962467193603516 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.005901336669921875 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.006028175354003906 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.00661921501159668 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.007938623428344727 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.007214546203613281 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 6, 1, 0]
+[0, 2, 5, 4, 0]
+Optimal cost: 1320
+Time taken: 0.008533477783203125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.06366181373596191 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.06565117835998535 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.05694127082824707 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.04579424858093262 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.054154157638549805 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-7-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 5, 0]
+[0, 6, 0]
+[0, 10, 0]
+[0, 8, 9, 0]
+[0, 4, 7, 1, 0]
+Optimal cost: 2964
+Time taken: 0.05033469200134277 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.017725706100463867 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.025165796279907227 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.021039962768554688 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.022903919219970703 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.020151853561401367 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-5-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 0]
+[0, 6, 0]
+[0, 8, 0]
+[0, 4, 5, 7, 0]
+[0, 1, 2, 0]
+Optimal cost: 1777
+Time taken: 0.02917337417602539 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 5, 0]
+[0, 7, 0]
+[0, 3, 6, 0]
+[0, 1, 2, 4, 0]
+Optimal cost: 1289
+Time taken: 0.09239602088928223 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 6, 0]
+[0, 1, 2, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+Optimal cost: 1289
+Time taken: 0.10096001625061035 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 0]
+[0, 7, 0]
+[0, 1, 2, 4, 0]
+[0, 3, 6, 0]
+Optimal cost: 1289
+Time taken: 0.10253548622131348 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 5, 0]
+[0, 7, 0]
+[0, 1, 2, 4, 0]
+[0, 3, 6, 0]
+Optimal cost: 1289
+Time taken: 0.10359716415405273 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 7, 0]
+[0, 4, 0]
+[0, 5, 3, 6, 0]
+[0, 1, 2, 0]
+Optimal cost: 1079
+Time taken: 0.10360884666442871 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-7-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 5, 0]
+[0, 7, 0]
+[0, 3, 6, 0]
+[0, 1, 2, 4, 0]
+Optimal cost: 1289
+Time taken: 0.09678840637207031 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.008933544158935547 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.008567094802856445 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.011796712875366211 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.009413480758666992 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.009053945541381836 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-6-3-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 3, 0]
+[0, 6, 4, 5, 1, 0]
+Optimal cost: 890
+Time taken: 0.007498741149902344 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.05459737777709961 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.0283658504486084 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.030710935592651367 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.04923248291015625 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.036669254302978516 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 5, 6, 1, 8, 3, 2, 7, 4, 0]
+Optimal cost: 762
+Time taken: 0.031184911727905273 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 7, 6, 0]
+[0, 2, 3, 0]
+[0, 8, 0]
+[0, 5, 4, 1, 0]
+Optimal cost: 915
+Time taken: 0.11317849159240723 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 7, 6, 0]
+[0, 2, 3, 0]
+[0, 8, 0]
+[0, 5, 4, 1, 0]
+Optimal cost: 915
+Time taken: 0.12356424331665039 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 4, 1, 0]
+[0, 2, 3, 0]
+[0, 8, 0]
+[0, 7, 6, 0]
+Optimal cost: 915
+Time taken: 0.09533882141113281 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 8, 3, 0]
+[0, 5, 0]
+[0, 7, 6, 4, 1, 0]
+Optimal cost: 950
+Time taken: 0.08365392684936523 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 8, 0]
+[0, 2, 3, 0]
+[0, 7, 6, 0]
+[0, 5, 4, 1, 0]
+Optimal cost: 915
+Time taken: 0.09347391128540039 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 7, 6, 0]
+[0, 8, 0]
+[0, 2, 3, 0]
+[0, 5, 4, 1, 0]
+Optimal cost: 915
+Time taken: 0.09322881698608398 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 3, 8, 6, 2, 9, 0]
+Optimal cost: 2178
+Time taken: 0.020900249481201172 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 3, 8, 6, 2, 9, 0]
+Optimal cost: 2178
+Time taken: 0.02690911293029785 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 8, 6, 2, 9, 3, 0]
+Optimal cost: 2159
+Time taken: 0.01984429359436035 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 3, 8, 6, 2, 9, 0]
+Optimal cost: 2178
+Time taken: 0.0346531867980957 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 3, 8, 6, 2, 9, 0]
+Optimal cost: 2178
+Time taken: 0.024288415908813477 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-6-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 1, 0]
+[0, 4, 0]
+[0, 5, 0]
+[0, 7, 0]
+[0, 10, 0]
+[0, 3, 8, 6, 2, 9, 0]
+Optimal cost: 2178
+Time taken: 0.021510839462280273 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 7, 0]
+[0, 3, 2, 6, 8, 5, 0]
+[0, 4, 1, 0]
+Optimal cost: 1636
+Time taken: 0.012426614761352539 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 7, 2, 6, 8, 5, 0]
+[0, 4, 1, 0]
+[0, 3, 0]
+Optimal cost: 1763
+Time taken: 0.011180639266967773 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 7, 0]
+[0, 5, 8, 6, 2, 3, 0]
+[0, 1, 4, 0]
+Optimal cost: 1636
+Time taken: 0.007936716079711914 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 7, 0]
+[0, 5, 8, 6, 2, 3, 0]
+[0, 4, 1, 0]
+Optimal cost: 1636
+Time taken: 0.014045476913452148 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 7, 0]
+[0, 5, 8, 6, 2, 3, 0]
+[0, 1, 4, 0]
+Optimal cost: 1636
+Time taken: 0.010614633560180664 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-3-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 2, 6, 8, 5, 0]
+[0, 7, 0]
+[0, 4, 1, 0]
+Optimal cost: 1636
+Time taken: 0.02266836166381836 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 5, 7, 8, 3, 0]
+[0, 2, 6, 4, 1, 0]
+Optimal cost: 482
+Time taken: 0.09322881698608398 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 8, 3, 5, 7, 6, 4, 1, 0]
+Optimal cost: 678
+Time taken: 0.08191061019897461 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 7, 8, 3, 0]
+[0, 2, 6, 4, 1, 0]
+Optimal cost: 482
+Time taken: 0.10232925415039062 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 5, 7, 8, 3, 0]
+[0, 2, 6, 4, 1, 0]
+Optimal cost: 482
+Time taken: 0.10675549507141113 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 8, 3, 5, 7, 6, 4, 1, 0]
+Optimal cost: 678
+Time taken: 0.07807135581970215 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-8-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 5, 4, 7, 6, 1, 0]
+[0, 2, 8, 3, 0]
+Optimal cost: 659
+Time taken: 0.08087921142578125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 8, 0]
+[0, 6, 10, 5, 3, 0]
+[0, 4, 1, 2, 0]
+[0, 9, 0]
+[0, 7, 0]
+Optimal cost: 1876
+Time taken: 0.10500240325927734 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 9, 5, 3, 0]
+[0, 7, 0]
+[0, 10, 1, 2, 0]
+[0, 6, 0]
+[0, 4, 8, 0]
+Optimal cost: 1759
+Time taken: 0.09956097602844238 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 3, 0]
+[0, 6, 10, 1, 2, 0]
+[0, 9, 8, 0]
+[0, 4, 0]
+[0, 7, 0]
+Optimal cost: 1917
+Time taken: 0.09947776794433594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 7, 0]
+[0, 10, 5, 3, 0]
+[0, 6, 0]
+[0, 9, 8, 2, 0]
+[0, 4, 1, 0]
+Optimal cost: 1818
+Time taken: 0.10981917381286621 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 4, 0]
+[0, 9, 0]
+[0, 6, 0]
+[0, 10, 5, 3, 0]
+[0, 7, 8, 1, 2, 0]
+Optimal cost: 2619
+Time taken: 0.10799098014831543 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-5-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 4, 0]
+[0, 5, 3, 0]
+[0, 6, 10, 1, 2, 0]
+[0, 9, 0]
+[0, 7, 8, 0]
+Optimal cost: 2332
+Time taken: 0.10280394554138184 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 5, 8, 4, 9, 2, 10, 7, 3, 1, 6, 0]
+Optimal cost: 1580
+Time taken: 0.006744384765625 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 5, 8, 4, 9, 2, 10, 7, 3, 1, 6, 0]
+Optimal cost: 1580
+Time taken: 0.0047113895416259766 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 5, 8, 4, 9, 2, 10, 7, 3, 1, 6, 0]
+Optimal cost: 1580
+Time taken: 0.007903814315795898 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 8, 4, 9, 10, 5, 7, 3, 1, 6, 0]
+Optimal cost: 1572
+Time taken: 0.006635189056396484 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 5, 10, 2, 9, 4, 8, 6, 1, 3, 7, 0]
+Optimal cost: 1523
+Time taken: 0.010687828063964844 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 5, 8, 4, 9, 2, 10, 7, 3, 1, 6, 0]
+Optimal cost: 1580
+Time taken: 0.004935264587402344 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.013042449951171875 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.010059356689453125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.013579368591308594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.023283958435058594 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.01593327522277832 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 4, 0]
+[0, 10, 0]
+[0, 5, 8, 0]
+[0, 1, 2, 7, 6, 3, 9, 0]
+Optimal cost: 1853
+Time taken: 0.009892702102661133 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 0]
+[0, 5, 9, 0]
+[0, 8, 7, 6, 10, 2, 1, 4, 0]
+Optimal cost: 1232
+Time taken: 0.08009219169616699 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 7, 10, 2, 1, 8, 0]
+[0, 3, 4, 0]
+[0, 6, 5, 9, 0]
+Optimal cost: 1522
+Time taken: 0.016281604766845703 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 8, 7, 4, 0]
+[0, 3, 0]
+[0, 2, 6, 10, 5, 9, 1, 0]
+Optimal cost: 1414
+Time taken: 0.0177001953125 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 6, 5, 9, 0]
+[0, 3, 0]
+[0, 8, 7, 10, 2, 1, 4, 0]
+Optimal cost: 1340
+Time taken: 0.057332754135131836 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 7, 3, 0]
+[0, 2, 6, 10, 5, 9, 1, 8, 0]
+[0, 4, 0]
+Optimal cost: 1370
+Time taken: 0.020285844802856445 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-10-3-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 0]
+[0, 2, 1, 4, 0]
+[0, 8, 7, 6, 10, 5, 9, 0]
+Optimal cost: 1231
+Time taken: 0.03905844688415527 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.03227639198303223 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.02670454978942871 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.02950572967529297 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.04589271545410156 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.029145240783691406 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-8-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 3, 0]
+[0, 4, 0]
+[0, 8, 0]
+[0, 10, 0]
+[0, 13, 0]
+[0, 14, 0]
+[0, 7, 12, 0]
+[0, 11, 5, 15, 6, 9, 1, 2, 0]
+Optimal cost: 2673
+Time taken: 0.028406143188476562 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 4, 5, 13, 0]
+[0, 10, 0]
+[0, 9, 0]
+[0, 11, 3, 0]
+[0, 8, 0]
+[0, 12, 0]
+[0, 2, 14, 6, 15, 1, 7, 0]
+Optimal cost: 2286
+Time taken: 0.13052010536193848 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 1, 7, 0]
+[0, 12, 0]
+[0, 9, 5, 4, 13, 3, 0]
+[0, 10, 0]
+[0, 11, 0]
+[0, 8, 0]
+[0, 2, 14, 6, 15, 0]
+Optimal cost: 2265
+Time taken: 0.11912178993225098 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 3, 0]
+[0, 8, 0]
+[0, 2, 13, 0]
+[0, 10, 0]
+[0, 11, 0]
+[0, 12, 0]
+[0, 9, 5, 4, 15, 14, 6, 1, 7, 0]
+Optimal cost: 2545
+Time taken: 0.10857915878295898 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 11, 14, 6, 15, 1, 7, 0]
+[0, 9, 0]
+[0, 3, 0]
+[0, 10, 0]
+[0, 2, 4, 5, 13, 0]
+[0, 12, 0]
+[0, 8, 0]
+Optimal cost: 2032
+Time taken: 0.12233400344848633 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 12, 0]
+[0, 8, 0]
+[0, 4, 5, 13, 3, 0]
+[0, 10, 0]
+[0, 2, 14, 15, 0]
+[0, 11, 0]
+[0, 9, 6, 1, 7, 0]
+Optimal cost: 2319
+Time taken: 0.1332075595855713 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-7-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 11, 6, 0]
+[0, 8, 0]
+[0, 3, 0]
+[0, 2, 14, 13, 0]
+[0, 10, 0]
+[0, 12, 0]
+[0, 9, 5, 4, 15, 1, 7, 0]
+Optimal cost: 2209
+Time taken: 0.13082361221313477 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 3, 1, 10, 14, 4, 11, 5, 0]
+Optimal cost: 2272
+Time taken: 0.010792732238769531 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 5, 1, 10, 14, 4, 11, 3, 0]
+Optimal cost: 2224
+Time taken: 0.010950326919555664 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 3, 1, 10, 14, 4, 11, 5, 0]
+Optimal cost: 2272
+Time taken: 0.015624761581420898 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 3, 1, 10, 14, 4, 11, 5, 0]
+Optimal cost: 2272
+Time taken: 0.013081550598144531 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 3, 1, 10, 14, 4, 11, 5, 0]
+Optimal cost: 2272
+Time taken: 0.015400886535644531 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-6-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 2, 0]
+[0, 7, 0]
+[0, 8, 0]
+[0, 15, 0]
+[0, 6, 13, 9, 12, 0]
+[0, 3, 1, 10, 14, 4, 11, 5, 0]
+Optimal cost: 2272
+Time taken: 0.02124166488647461 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.015449762344360352 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.018576383590698242 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.01183938980102539 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.016144275665283203 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.009808540344238281 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-5-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 7, 0]
+[0, 13, 0]
+[0, 11, 3, 15, 12, 0]
+[0, 1, 5, 9, 0]
+[0, 2, 6, 4, 10, 8, 14, 0]
+Optimal cost: 2826
+Time taken: 0.016601085662841797 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 9, 2, 13, 11, 6, 4, 1, 10, 12, 7, 8, 15, 5, 14, 3, 0]
+Optimal cost: 750
+Time taken: 0.12014460563659668 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 15, 1, 10, 12, 5, 14, 4, 9, 8, 13, 11, 7, 6, 2, 3, 0]
+Optimal cost: 819
+Time taken: 0.12154984474182129 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 2, 8, 13, 11, 7, 15, 1, 10, 12, 6, 4, 9, 5, 14, 3, 0]
+Optimal cost: 725
+Time taken: 0.09539508819580078 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 14, 4, 1, 10, 12, 7, 11, 6, 9, 8, 13, 2, 3, 5, 15, 0]
+Optimal cost: 779
+Time taken: 0.1154932975769043 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 2, 7, 8, 13, 9, 14, 4, 1, 10, 3, 5, 15, 12, 6, 11, 0]
+Optimal cost: 905
+Time taken: 0.11462283134460449 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-1-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 13, 10, 12, 6, 11, 14, 3, 5, 4, 9, 2, 7, 8, 15, 1, 0]
+Optimal cost: 915
+Time taken: 0.1163778305053711 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 9, 0]
+[0, 11, 0]
+[0, 13, 0]
+[0, 7, 2, 10, 12, 5, 4, 15, 3, 8, 6, 14, 1, 0]
+Optimal cost: 2102
+Time taken: 0.017218589782714844 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 9, 0]
+[0, 13, 0]
+[0, 11, 0]
+[0, 2, 5, 12, 10, 7, 4, 15, 8, 6, 14, 3, 1, 0]
+Optimal cost: 2035
+Time taken: 0.0322117805480957 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 9, 0]
+[0, 11, 0]
+[0, 13, 0]
+[0, 7, 2, 10, 12, 5, 4, 15, 3, 8, 6, 14, 1, 0]
+Optimal cost: 2102
+Time taken: 0.015172243118286133 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 9, 0]
+[0, 11, 0]
+[0, 13, 0]
+[0, 7, 2, 10, 12, 5, 4, 15, 6, 8, 3, 14, 1, 0]
+Optimal cost: 2070
+Time taken: 0.009636402130126953 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 9, 0]
+[0, 11, 0]
+[0, 13, 0]
+[0, 7, 2, 10, 12, 5, 4, 15, 3, 6, 8, 14, 1, 0]
+Optimal cost: 2087
+Time taken: 0.010076284408569336 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-4-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 9, 0]
+[0, 11, 0]
+[0, 13, 0]
+[0, 7, 2, 10, 12, 5, 4, 15, 3, 6, 8, 14, 1, 0]
+Optimal cost: 2087
+Time taken: 0.01568293571472168 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 12, 3, 9, 1, 13, 2, 15, 0]
+[0, 6, 10, 5, 8, 7, 11, 14, 4, 0]
+Optimal cost: 772
+Time taken: 0.10352253913879395 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 12, 14, 9, 3, 0]
+[0, 4, 11, 13, 2, 1, 8, 7, 6, 10, 5, 15, 0]
+Optimal cost: 857
+Time taken: 0.10776758193969727 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 12, 3, 9, 5, 15, 0]
+[0, 8, 7, 6, 10, 13, 2, 1, 11, 14, 4, 0]
+Optimal cost: 786
+Time taken: 0.1005702018737793 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 12, 14, 3, 0]
+[0, 6, 5, 4, 11, 9, 1, 8, 7, 10, 13, 2, 15, 0]
+Optimal cost: 978
+Time taken: 0.07250285148620605 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 3, 9, 1, 8, 7, 11, 13, 2, 6, 10, 5, 15, 0]
+[0, 12, 14, 4, 0]
+Optimal cost: 660
+Time taken: 0.1013178825378418 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-2-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 12, 2, 4, 0]
+[0, 3, 6, 10, 13, 1, 8, 7, 11, 14, 9, 5, 15, 0]
+Optimal cost: 903
+Time taken: 0.10340642929077148 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 1
+Output: Best solution:
+[0, 9, 4, 12, 5, 8, 15, 13, 14, 11, 7, 0]
+[0, 1, 10, 0]
+[0, 3, 6, 2, 0]
+Optimal cost: 1406
+Time taken: 0.10572338104248047 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 2
+Output: Best solution:
+[0, 7, 0]
+[0, 1, 10, 0]
+[0, 9, 3, 6, 5, 8, 15, 13, 14, 11, 2, 4, 12, 0]
+Optimal cost: 1364
+Time taken: 0.04805111885070801 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 3
+Output: Best solution:
+[0, 10, 0]
+[0, 12, 9, 3, 14, 8, 15, 13, 0]
+[0, 7, 11, 1, 5, 6, 4, 2, 0]
+Optimal cost: 1690
+Time taken: 0.03914332389831543 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 4
+Output: Best solution:
+[0, 1, 10, 0]
+[0, 12, 0]
+[0, 7, 2, 4, 15, 13, 14, 3, 6, 5, 8, 9, 11, 0]
+Optimal cost: 1683
+Time taken: 0.1247091293334961 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 5
+Output: Best solution:
+[0, 10, 0]
+[0, 9, 13, 14, 8, 3, 12, 0]
+[0, 1, 11, 15, 7, 4, 5, 6, 2, 0]
+Optimal cost: 1688
+Time taken: 0.03619027137756348 seconds
+Error: 
+
+--------------------------------------------------
+Filename: vrp-15-3-1.txt
+Algorithm: SA SP=100.py
+Run: 6
+Output: Best solution:
+[0, 8, 15, 7, 0]
+[0, 9, 4, 13, 14, 11, 1, 3, 12, 5, 6, 2, 0]
+[0, 10, 0]
+Optimal cost: 1537
+Time taken: 0.11048674583435059 seconds
+Error: 
+
+--------------------------------------------------
