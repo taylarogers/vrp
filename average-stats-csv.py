@@ -19,7 +19,8 @@ def averageStats(filename, type):
         # Write the header row
         writer.writerow(['File', 'Lowest Optimal Cost', 'Number of Runs with the Lowest Optimal Cost', 'Highest Optimal Cost', 
                          'Number of Runs with the Highest Optimal Cost', 'Best Time (seconds)', 'Average Time (seconds)', 
-                         'Worst Time (seconds)', 'Standard Deviation of Optimal Cost', 'Standard Deviation of Time'])
+                         'Worst Time (seconds)', 'Standard Deviation of Optimal Cost', 'Standard Deviation of Time',
+                         'Average Optimal Cost', 'Median Optimal Cost', 'Median Time'])
 
         # Search through each new file tested
         while currentLine <= maxLine:
@@ -83,8 +84,8 @@ def averageStats(filename, type):
                     longestTime = max(longestTime, time)
 
             if memoryError:
-                writer.writerow([filename, "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM"])
-                for _ in range(3):
+                writer.writerow([filename, "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM", "OOM"])
+                for _ in range(6):
                     currentLine += (fileStopper + 1)
                     linesLeft = lines[currentLine:]
                     if linesLeft:
@@ -97,7 +98,7 @@ def averageStats(filename, type):
                 continue
 
             if timeoutError:
-                writer.writerow([filename, "T", "T", "T", "T", "T", "T", "T", "T", "T"])
+                writer.writerow([filename, "T", "T", "T", "T", "T", "T", "T", "T", "T", "T", "T", "T"])
                 currentLine += (fileStopper + 1)
                 linesLeft = lines[currentLine:]
                 if linesLeft:
@@ -110,8 +111,8 @@ def averageStats(filename, type):
                 continue
 
             if sizeError:
-                writer.writerow([filename, "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL"])
-                for _ in range(3):
+                writer.writerow([filename, "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL", "QL"])
+                for _ in range(6):
                     currentLine += (fileStopper + 1)
                     linesLeft = lines[currentLine:]
                     if linesLeft:
@@ -126,7 +127,7 @@ def averageStats(filename, type):
             runNumber = 1
 
             # Calculate for all runs of this file instance
-            while runNumber < 3:
+            while runNumber < 6:
                 currentLine += (fileStopper + 1)
                 line = lines[currentLine]
 
@@ -167,15 +168,19 @@ def averageStats(filename, type):
 
             # Calculate averages and standard deviations
             # *************************** CHANGE TO 6 WHEN UPDATED RUNS ***************************
-            averageTime = round(totalTime / 3, 6)  # Rounded to 6 decimal places
+            averageTime = round(totalTime / 6, 6)  # Rounded to 6 decimal places
             stdDevOptimalCost = round(np.std(optimalCosts), 6)  # Standard deviation of optimal cost
             stdDevTime = round(np.std(times), 6)  # Standard deviation of time
             bestTime = round(quickestTime, 6)
             worstTime = round(longestTime, 6)
+            averageOptimalCost = round(np.mean(optimalCosts), 6)
+            medianOptimalCost = round(np.median(optimalCosts), 6)
+            medianTime = round(np.median(times), 6)
 
             # Write the data row
             writer.writerow([filename, lowestOptimalCost, sameLowestAnswer, highestOptimalCost, sameHighestAnswer,
-                             bestTime, averageTime, worstTime, stdDevOptimalCost, stdDevTime])
+                             bestTime, averageTime, worstTime, stdDevOptimalCost, stdDevTime,
+                             averageOptimalCost, medianOptimalCost, medianTime])
 
             print("Written")
 
@@ -183,7 +188,7 @@ def averageStats(filename, type):
 
 # Classical
 averageStats('output_bnb.txt', 'B&B')
-averageStats('output_sa.txt', 'SA')
+# averageStats('output_sa.txt', 'SA')
 
 # Quantum
 averageStats('output_qaoa_coblya_5.txt', 'QAOA_COBLYA_5')
@@ -192,6 +197,5 @@ averageStats('output_qaoa_spsa_5.txt', 'QAOA_SPSA_5')
 averageStats('output_vqe_coblya_RA.txt', 'VQE_COBLYA_RA')
 averageStats('output_vqe_spsa_RA.txt', 'VQE_SPSA_RA')
 
-averageStats('new_sp=100_output_sa.txt', 'SA_SP100')
-averageStats('new_sp=1000_output_sa.txt', 'SA_SP1000')
-
+# averageStats('new_sp=100_output_sa.txt', 'SA_SP100')
+# averageStats('new_sp=1000_output_sa.txt', 'SA_SP1000')

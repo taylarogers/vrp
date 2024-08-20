@@ -1,6 +1,0 @@
-Filename: vrp-4-3-3.txt
-Algorithm: vqe_coblya_RA.py
-Run: 1
-Error: Timeout expired after 21600 seconds
-
---------------------------------------------------
